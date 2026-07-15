@@ -7,6 +7,7 @@
 !CLAUDE.md
 !README.md
 !CHANGELOG.md
+!CONTRIBUTING.md
 !LICENSE.md
 !SECURITY.md
 !SUPPORT.md
@@ -19,11 +20,18 @@
 !.github/ISSUE_TEMPLATE/config.yml
 
 !assets/
+!assets/compact-window.png
+!assets/control-center.png
 !assets/stabilink-v3.png
 
 !docs/
+!docs/FAQ.md
 !docs/INSTALL.md
+!docs/MODES.md
+!docs/PRIVACY_AND_LOGS.md
 !docs/RELEASE_PROCESS.md
+!docs/releases/
+!docs/releases/v3.0.0.md
 
 !.safety/
 !.safety/allowed-files.txt

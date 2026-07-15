@@ -1,6 +1,5 @@
-# StabiLink public showcase guard
+# Защита публичной витрины StabiLink
 
-Read and obey [`AGENTS.md`](./AGENTS.md) before any file, Git, or GitHub operation.
+Перед любыми операциями с файлами, Git или GitHub прочитайте и соблюдайте [`AGENTS.md`](./AGENTS.md).
 
-This repository accepts documentation and approved marketing images only. It must never receive application source code or Git history from `E:\STABILINK(Qoder)`. Never bypass `.safety/verify-public-repo.ps1` or the installed Git hooks.
-
+Репозиторий принимает только документацию и одобренные изображения. Исходный код приложения и история приватного репозитория запрещены. Нельзя обходить `.safety/verify-public-repo.ps1` или установленные Git hooks.

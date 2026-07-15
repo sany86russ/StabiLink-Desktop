@@ -12,9 +12,9 @@ if (-not $resolvedGitRoot -or (Resolve-Path $resolvedGitRoot).Path -ne $repoRoot
     throw 'Safety check must run from the isolated StabiLink-Public repository.'
 }
 
-$privateRoot = 'E:\STABILINK(Qoder)'
-if ($repoRoot.StartsWith($privateRoot, [System.StringComparison]::OrdinalIgnoreCase)) {
-    throw 'Public repository must never be nested inside the private source repository.'
+$privateRoot = [Environment]::GetEnvironmentVariable('STABILINK_PRIVATE_ROOT')
+if ($privateRoot -and $repoRoot.StartsWith([IO.Path]::GetFullPath($privateRoot), [System.StringComparison]::OrdinalIgnoreCase)) {
+    throw 'Public repository must never be nested inside a private source repository.'
 }
 
 $allowlistPath = Join-Path $PSScriptRoot 'allowed-files.txt'
@@ -110,7 +110,7 @@ foreach ($file in $files) {
     if ($textExtensions -contains $extension -or $file -in @('.gitignore', '.gitattributes')) {
         $content = Get-Content -LiteralPath (Join-Path $repoRoot $file) -Raw -Encoding utf8
         foreach ($pattern in $secretPatterns) {
-            if ($content -match $pattern) { $errors.Add("Possible secret in: $file") }
+        if ($content -match $pattern) { $errors.Add("Possible secret in: $file") }
         }
     }
 }

@@ -1,10 +1,35 @@
-# StabiLink proprietary notice
+# Лицензия StabiLink Desktop
 
-Copyright © 2026 StabiLink. All rights reserved.
+Copyright © 2025–2026 StabiLink Team. Все права защищены.
 
-StabiLink Desktop is proprietary software. Publication of this repository does not grant permission to copy, modify, reverse engineer, sublicense, sell, or redistribute the StabiLink application except as expressly permitted by the end-user agreement supplied with the official application.
+## Статус программы
 
-This repository is provided as a public release, documentation, and support channel. It does not contain or license the StabiLink application source code.
+StabiLink Desktop является проприетарным программным обеспечением. Публикация этого репозитория не означает публикацию исходного кода и не переводит StabiLink в категорию программ с открытым исходным кодом.
 
-Third-party software included with or used by StabiLink remains subject to its own license terms. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and the license files supplied with an official distribution.
+Пользователю разрешается загружать, устанавливать и использовать официальную сборку StabiLink в соответствии с пользовательским соглашением, показываемым приложением.
+
+Без отдельного письменного разрешения правообладателя запрещается:
+
+- изменять и распространять модифицированные сборки StabiLink;
+- выдавать стороннюю сборку за официальную;
+- удалять сведения об авторских правах и происхождении программы;
+- продавать, сублицензировать или включать StabiLink в другой продукт;
+- обходить технические ограничения и механизмы проверки целостности;
+- использовать товарные обозначения StabiLink способом, создающим впечатление официального партнёрства.
+
+Ограничения применяются только к собственному коду, оформлению и материалам StabiLink и не заменяют лицензии сторонних компонентов.
+
+## Сторонние компоненты
+
+В дистрибутив могут входить отдельные сторонние программы и библиотеки. Они сохраняют собственные авторские права и распространяются на условиях MIT, Apache 2.0, LGPL, GPL и других соответствующих лицензий.
+
+Перечень и ссылки на исходные проекты приведены в [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) и в документах внутри официальной сборки.
+
+Условия StabiLink не ограничивают права, прямо предоставленные лицензиями сторонних компонентов.
+
+## Отказ от гарантий
+
+Программа предоставляется «как есть». В пределах, допускаемых применимым законодательством, правообладатель не гарантирует непрерывную доступность сторонних сетей, сервисов и ресурсов, а также одинаковый результат у разных провайдеров.
+
+Пользователь самостоятельно отвечает за законность своих действий, соблюдение правил сторонних сервисов и сохранность собственных данных.
 

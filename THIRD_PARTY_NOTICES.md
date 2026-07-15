@@ -1,16 +1,86 @@
-# Third-party notices
+# Сторонние компоненты и лицензии
 
-StabiLink Desktop is proprietary software, but it uses separately distributed third-party components. Those components remain governed by their own licenses; the StabiLink proprietary notice does not replace or restrict those licenses.
+Этот документ относится к StabiLink Desktop 3.0.0. Для каждого следующего релиза версии компонентов должны проверяться повторно.
 
-The production distribution may include components from projects such as:
+StabiLink использует перечисленные ниже проекты как отдельные исполняемые компоненты или библиотеки. StabiLink не заявляет авторство этих проектов, не связан с их разработчиками и не изменяет предоставленные ими лицензионные права.
 
-- **zapret / winws** — MIT License — <https://github.com/bol-van/zapret>
-- **WinDivert** — GNU LGPL v3 or an applicable alternative license — <https://reqrypt.org/windivert.html>
-- **sing-box** — GNU GPL v3 or later, plus the project's naming notice — <https://github.com/SagerNet/sing-box>
-- **Wintun prebuilt binaries** — terms supplied with the official prebuilt package — <https://www.wintun.net/>
-- **AdGuard dnsproxy** — license and source published by the project — <https://github.com/AdguardTeam/dnsproxy>
+## Сводная таблица
 
-Exact versions and complete license texts must be included with each official StabiLink distribution. Where a license requires corresponding source or an offer for source, StabiLink must provide access to the corresponding upstream or modified component source for the distributed version.
+| Компонент | Версия в 3.0.0 | Назначение | Лицензия | Исходный проект |
+|---|---:|---|---|---|
+| winws | v72.9, commit `c849e55` | Пакетная обработка для Оптимизатора | MIT | [bol-van/zapret](https://github.com/bol-van/zapret) |
+| WinDivert | 2.2 | Драйвер и API перехвата пакетов | LGPL v3 или альтернативная лицензия проекта | [basil00/Divert](https://github.com/basil00/Divert) |
+| Cygwin API Library | 3.4.10 | Среда выполнения winws | LGPL v3+ с Cygwin Linking Exception | [cygwin.com](https://cygwin.com/licensing.html) |
+| dnsproxy | v0.73.2 | DNS-over-HTTPS и локальный DNS-прокси | Apache License 2.0 | [AdguardTeam/dnsproxy](https://github.com/AdguardTeam/dnsproxy/tree/v0.73.2) |
+| sing-box | v1.13.12, revision `1086ab2` | Туннельный движок SecureLink | GPL v3 или более поздняя, плюс уведомление проекта об имени | [SagerNet/sing-box](https://github.com/SagerNet/sing-box/tree/v1.13.12) |
+| Wintun | 0.14.1 | Виртуальный сетевой адаптер | Условия официальных prebuilt binaries | [WireGuard/Wintun](https://git.zx2c4.com/wintun/) |
 
-This file is an initial public index, not a substitute for the license files packaged with a release. Before publishing a new binary, the release owner must run a version-specific third-party inventory.
+## winws / zapret
+
+- Правообладатель: авторы проекта bol-van/zapret.
+- Лицензия: MIT.
+- В StabiLink запускается как отдельный процесс и используется модулем Оптимизатора.
+- Официальный проект и исходный код: <https://github.com/bol-van/zapret>.
+
+Лицензия MIT разрешает использование, копирование, изменение и распространение при сохранении уведомления об авторских правах и текста лицензии.
+
+## WinDivert
+
+- Правообладатель: авторы WinDivert.
+- Версия драйвера в StabiLink 3.0.0: 2.2.
+- Лицензия: GNU Lesser General Public License v3 либо другая применимая лицензия, предоставленная проектом.
+- Официальная документация: <https://reqrypt.org/windivert.html>.
+- Исходный код: <https://github.com/basil00/Divert>.
+
+WinDivert допускает использование в проприетарных программах при строгом соблюдении LGPL v3 либо условий приобретённой альтернативной лицензии.
+
+## Cygwin API Library
+
+- Версия `cygwin1.dll`: 3.4.10.
+- Лицензия: GNU LGPL v3 или более поздняя с Cygwin Linking Exception.
+- Условия: <https://cygwin.com/licensing.html>.
+- Исходный код и архивы: <https://cygwin.com/git.html>.
+
+Cygwin Linking Exception предоставляет дополнительные права независимым модулям. При распространении самой библиотеки должны соблюдаться её собственные лицензионные требования.
+
+## AdGuard dnsproxy
+
+- Версия: v0.73.2.
+- Лицензия: Apache License 2.0.
+- Используется TurboDNS как отдельный локальный DNS-процесс.
+- Исходный код соответствующей версии: <https://github.com/AdguardTeam/dnsproxy/tree/v0.73.2>.
+- Текст лицензии: <https://github.com/AdguardTeam/dnsproxy/blob/v0.73.2/LICENSE>.
+
+## sing-box
+
+- Версия: v1.13.12.
+- Revision: `1086ab2563320e0da0c23b3a491d8dfa0939dff4`.
+- Лицензия: GNU GPL v3 или более поздняя.
+- Используется SecureLink как отдельный туннельный процесс.
+- Исходный код соответствующей версии: <https://github.com/SagerNet/sing-box/tree/v1.13.12>.
+- Текст лицензии: <https://github.com/SagerNet/sing-box/blob/v1.13.12/LICENSE>.
+
+Проект sing-box также содержит отдельное уведомление о недопустимости использования его имени для обозначения производных работ или создания впечатления официальной связи без согласия автора.
+
+## Wintun
+
+- Версия: 0.14.1.
+- Правообладатель: WireGuard LLC.
+- В StabiLink используется официальная предварительно собранная `wintun.dll`.
+- Официальный сайт: <https://www.wintun.net/>.
+- Репозиторий: <https://git.zx2c4.com/wintun/>.
+
+Официальные prebuilt binaries поставляются с отдельным лицензионным файлом внутри дистрибутива Wintun. Его условия необходимо сохранять вместе с распространяемой библиотекой.
+
+## Соответствующий исходный код
+
+StabiLink не публикует собственный исходный код Desktop-приложения. Это не ограничивает права на сторонние компоненты.
+
+Для компонентов под GPL/LGPL пользователь может получить соответствующий исходный код по ссылкам на точные версии выше. Если официальный источник станет недоступен либо StabiLink начнёт распространять изменённую версию компонента, команда StabiLink должна предоставить соответствующий исходный код или корректное предложение исходного кода способом, требуемым лицензией.
+
+## Сообщить о неточности
+
+Если вы заметили ошибку в версии, лицензии или ссылке, создайте Issue категории «Другое» либо напишите в [поддержку StabiLink](https://t.me/stabilink_bot).
+
+Этот перечень носит информационный характер и не заменяет оригинальные тексты лицензий.
 

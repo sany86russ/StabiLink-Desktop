@@ -1,0 +1,67 @@
+name: Сообщить об ошибке
+description: Воспроизводимая проблема в StabiLink Desktop
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Не публикуйте токены, QR-коды, ключи, подписочные ссылки и необработанные логи.
+  - type: input
+    id: version
+    attributes:
+      label: Версия StabiLink
+      placeholder: "3.0.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: windows
+    attributes:
+      label: Версия Windows
+      options:
+        - Windows 11
+        - Windows 10
+        - Другая
+    validations:
+      required: true
+  - type: dropdown
+    id: module
+    attributes:
+      label: Связанный модуль
+      options:
+        - Интерфейс или запуск
+        - Оптимизатор / Phantom
+        - Game Filter
+        - SecureLink VPN
+        - TurboDNS
+        - Обновление
+        - Авторизация
+        - Другое
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Шаги воспроизведения
+      description: Что вы нажали и что произошло?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Ожидаемое поведение
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Дополнительная информация
+      description: Прикладывайте только скриншоты и заранее очищенные фрагменты журналов.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Проверка приватности
+      options:
+        - label: Я удалил токены, ключи, QR-коды, ссылки подписки и личные данные.
+          required: true
+

@@ -1,0 +1,22 @@
+name: Предложить улучшение
+description: Идея для будущей версии StabiLink
+title: "[Idea]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Какую проблему решает предложение?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Как это могло бы работать?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Возможные альтернативы
+

@@ -19,7 +19,16 @@ THIRD_PARTY_NOTICES.md
 assets/stabilink-v3.png
 assets/compact-window.png
 assets/control-center.png
+assets/connection-settings.png
+assets/strategies.png
+assets/statistics.png
+assets/diagnostics.png
+assets/utilities.png
+assets/settings.png
 docs/FAQ.md
+docs/FIRST_START.md
+docs/CONTROL_CENTER.md
+docs/SUB_URL.md
 docs/INSTALL.md
 docs/MODES.md
 docs/PRIVACY_AND_LOGS.md

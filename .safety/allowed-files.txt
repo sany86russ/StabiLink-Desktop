@@ -25,6 +25,14 @@ assets/statistics.png
 assets/diagnostics.png
 assets/utilities.png
 assets/settings.png
+assets/auth-device-type.png
+assets/auth-device-code.png
+assets/auth-qr-scanner.png
+assets/auth-password.png
+assets/auth-email-code.png
+assets/auth-telegram-code.png
+assets/suburl-create-slot.png
+assets/suburl-karing-android-guide.png
 docs/FAQ.md
 docs/FIRST_START.md
 docs/CONTROL_CENTER.md

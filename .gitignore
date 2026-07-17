@@ -49,6 +49,7 @@
 !docs/RELEASE_PROCESS.md
 !docs/releases/
 !docs/releases/v3.0.0.md
+!docs/releases/v3.1.0.md
 
 !.safety/
 !.safety/allowed-files.txt

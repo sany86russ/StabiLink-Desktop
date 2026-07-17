@@ -9,10 +9,24 @@
 
 ## Куда обращаться
 
-- Общая поддержка: [@stabilink_bot](https://t.me/stabilink_bot)
-- Новости проекта: [@stabilink](https://t.me/stabilink)
-- Воспроизводимая ошибка Desktop: Issue по шаблону этого репозитория
-- Уязвимость: только по инструкции [SECURITY.md](SECURITY.md)
+| Вопрос | Куда |
+|---|---|
+| Аккаунт, подписка, оплата, устройства | [@stabilink_bot](https://t.me/stabilink_bot) |
+| Управление подпиской и Sub URL самостоятельно | [apps.stabilink.ru](https://apps.stabilink.ru) или [кабинет в Telegram](https://t.me/stabilink_bot/staboffice) |
+| Воспроизводимая ошибка Desktop | [Issue по шаблону](https://github.com/sany86russ/StabiLink-Desktop/issues/new/choose) |
+| Уязвимость | Только по инструкции [SECURITY.md](SECURITY.md) — не создавайте публичный Issue |
+| Статус сервиса и анонсы версий | [@stabilink](https://t.me/stabilink) |
+| Общее описание продукта | [stabilink.ru](https://stabilink.ru) |
 
-Никогда не публикуйте токены, QR-коды, подписочные ссылки, ключи или полные необработанные логи.
+## Что приложить к обращению
+
+1. Версию StabiLink (раздел «О программе»).
+2. Windows 10 или 11.
+3. Какие модули были включены: Оптимизатор, SecureLink, TurboDNS.
+4. Что делали и что ожидали увидеть.
+
+Полный диагностический архив передавайте только в личную поддержку, не в публичный Issue. Как его собрать: [Приватность и журналы](docs/PRIVACY_AND_LOGS.md).
+
+> [!WARNING]
+> Никогда не публикуйте токены, QR-коды, подписочные ссылки, ключи или полные необработанные логи. Поддержка StabiLink не просит прислать пароль или полную ссылку Sub URL.
 

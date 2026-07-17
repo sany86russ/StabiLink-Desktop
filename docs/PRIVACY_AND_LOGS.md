@@ -1,6 +1,6 @@
 # Приватность и журналы StabiLink
 
-[[Вернуться к README]](../README.md)
+[Вернуться к README](../README.md) · [FAQ](FAQ.md) · [Поддержка](../SUPPORT.md)
 
 ## Для чего нужны журналы
 

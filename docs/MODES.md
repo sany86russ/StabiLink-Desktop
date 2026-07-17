@@ -1,6 +1,6 @@
 # Режимы работы StabiLink
 
-[[Вернуться к README]](../README.md)
+[Вернуться к README](../README.md) · [FAQ](FAQ.md) · [Первый запуск](FIRST_START.md)
 
 ## Матрица совместимости
 

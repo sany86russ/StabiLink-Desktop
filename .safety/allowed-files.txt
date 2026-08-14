@@ -59,3 +59,4 @@ docs/PRIVACY_AND_LOGS.md
 docs/RELEASE_PROCESS.md
 docs/releases/v3.0.0.md
 docs/releases/v3.1.0.md
+docs/releases/v3.4.0.md

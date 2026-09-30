@@ -11,7 +11,7 @@ body:
     id: version
     attributes:
       label: Версия StabiLink
-      placeholder: "3.1.0"
+      placeholder: "4.2.0"
     validations:
       required: true
   - type: dropdown
@@ -31,7 +31,9 @@ body:
       options:
         - Интерфейс или запуск
         - Оптимизатор / Phantom
+        - Игровой профиль / каталог стратегий
         - Game Filter
+        - Performance Hub
         - SecureLink VPN
         - TurboDNS
         - Обновление
@@ -39,6 +41,22 @@ body:
         - Другое
     validations:
       required: true
+  - type: input
+    id: game_strategy
+    attributes:
+      label: Игра или сервис и выбранная стратегия
+      placeholder: "WARDOGS — Phantom (WARDOGS ALT)"
+  - type: input
+    id: failure_time
+    attributes:
+      label: Время сбоя и включённые модули
+      description: Укажите часовой пояс и состояние Оптимизатора, SecureLink, TurboDNS.
+      placeholder: "30.09.2026 20:15 МСК; Оптимизатор включён, SecureLink выключен"
+  - type: textarea
+    id: comparison
+    attributes:
+      label: Результат сравнения подключения
+      description: Вход, лобби, матч или голосовой чат; что происходит без Оптимизатора и с другим профилем?
   - type: textarea
     id: steps
     attributes:
@@ -64,4 +82,3 @@ body:
       options:
         - label: Я удалил токены, ключи, QR-коды, ссылки подписки и личные данные.
           required: true
-

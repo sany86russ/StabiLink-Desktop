@@ -1,9 +1,14 @@
 blank_issues_enabled: false
 contact_links:
+  - name: Руководства StabiLink Desktop
+    url: https://github.com/sany86russ/StabiLink-Desktop/blob/main/README.md#docs
+    about: Установка, вход, игры, VPN, DNS и подключение телефона.
+  - name: Подключение WARDOGS, Mistfall Hunter и других игр
+    url: https://github.com/sany86russ/StabiLink-Desktop/blob/main/README.md#games
+    about: Профили v4.2.0, симптомы и порядок проверки игрового подключения.
   - name: Поддержка StabiLink
     url: https://t.me/stabilink_bot
     about: Персональная помощь с подключением и аккаунтом.
   - name: Сообщить об уязвимости
     url: https://t.me/stabilink_bot
     about: Не публикуйте сведения об уязвимости в открытом Issue.
-

@@ -1,7 +1,5 @@
 <div align="center">
 
-![Фирменная иллюстрация StabiLink: игры, голосовая связь и видео в едином подключении](assets/stabilink-v3.png)
-
 # StabiLink Desktop — подключение к играм, Discord и YouTube на Windows
 
 **WARDOGS · Mistfall Hunter · PEAK · R.E.P.O. · Fallout 76 · Rainbow Six Siege · Dead by Daylight · Marvel Rivals · THE FINALS**
@@ -10,7 +8,11 @@
 [![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011%20x64-1d91d0)](#requirements)
 [![Лицензия](https://img.shields.io/badge/StabiLink-проприетарная-8b5cf6)](LICENSE.md)
 
-[**Скачать v4.2.7 для Windows**](https://github.com/sany86russ/StabiLink-Desktop/releases/tag/v4.2.7) · [**Что нового**](CHANGELOG.md#v427) · [**Первый запуск**](docs/FIRST_START.md) · [English](#english) · [Сайт](https://stabilink.ru) · [Личный кабинет](https://apps.stabilink.ru)
+[**Скачать ZIP v4.2.7 · 92 МБ**](https://github.com/sany86russ/StabiLink-Desktop/releases/download/v4.2.7/StabiLink-Desktop-v4.2.7-win-x64.zip) · [**Что нового**](CHANGELOG.md#v427) · [**Установка и первый запуск**](docs/FIRST_START.md) · [English](#english) · [Сайт](https://stabilink.ru) · [Личный кабинет](https://apps.stabilink.ru)
+
+Windows 10/11 x64 · Распакуйте весь ZIP · Запустите `StabiLink.Desktop.exe`
+
+![Фирменная иллюстрация StabiLink: игры, голосовая связь и видео в едином подключении](assets/stabilink-v3.png)
 
 </div>
 
@@ -203,19 +205,25 @@
 <a id="start"></a>
 ## Быстрый старт и обновление
 
-1. Скачайте **[StabiLink-Desktop-v4.2.7-win-x64.zip](https://github.com/sany86russ/StabiLink-Desktop/releases/download/v4.2.7/StabiLink-Desktop-v4.2.7-win-x64.zip)** и [файл SHA-256](https://github.com/sany86russ/StabiLink-Desktop/releases/download/v4.2.7/StabiLink-Desktop-v4.2.7-win-x64.zip.sha256).
-2. Проверьте хеш и полностью распакуйте ZIP в постоянную папку, например `C:\StabiLink`.
-3. Запустите `StabiLink.Desktop.exe` и подтвердите запрос прав администратора.
-4. Войдите через **«Email код»**: аккаунт нового пользователя создаётся автоматически. Также доступны пароль, QR и код устройства; Telegram не обязателен. [Все способы входа →](docs/FIRST_START.md)
-5. Для Discord и YouTube начните с Phantom или автоподбора. Для игры выберите её профиль в **«Для игр»**, нажмите **«Применить»** и включите Оптимизатор.
+**Первый запуск FREE не требует покупки PRO или банковской карты.** Вход в бесплатный аккаунт нужен; его можно создать прямо в приложении по email.
+
+1. **[Скачайте ZIP v4.2.7 для Windows · 92 МБ](https://github.com/sany86russ/StabiLink-Desktop/releases/download/v4.2.7/StabiLink-Desktop-v4.2.7-win-x64.zip)**. Это готовое приложение. Если открываете [страницу релиза](https://github.com/sany86russ/StabiLink-Desktop/releases/tag/v4.2.7), раскройте **Assets** и выберите `StabiLink-Desktop-v4.2.7-win-x64.zip`; архивы **Source code** для установки не подходят. До запуска сверьте [SHA-256](https://github.com/sany86russ/StabiLink-Desktop/releases/download/v4.2.7/StabiLink-Desktop-v4.2.7-win-x64.zip.sha256) по [инструкции проверки](docs/INSTALL.md#проверка-sha-256).
+2. В Проводнике нажмите по ZIP правой кнопкой → **«Извлечь все…»**. Распакуйте всё в постоянную папку, например `C:\StabiLink`, затем откройте именно извлечённую папку.
+3. Запустите **`StabiLink.Desktop.exe`**. Если Windows скрывает расширения, файл называется **StabiLink.Desktop**, тип **«Приложение»**. Рядом должны остаться `bin`, `lists` и `Resources`. Отдельного установщика нет; .NET включён в сборку.
+4. Подтвердите запрос прав администратора Windows. Прочитайте соглашение и нажмите **«Начать работу»** после согласия. На экране **«Быстрая настройка»** можно выбрать **«Пропустить — настрою вручную»**, затем настроить нужный профиль.
+5. Откройте **«Email код»** → введите email → **«Получить код»** → введите шесть цифр из письма → **«Проверить код»**. У нового пользователя аккаунт создастся автоматически. Если PRO уже оплачен, используйте тот же аккаунт/email. Пароль, QR и код устройства также доступны; Telegram не обязателен. [Все способы входа](docs/FIRST_START.md).
+6. Для игры: **«Расширенный режим» → «Стратегии» → «Для игр» → ваша игра → профиль → «Применить»**. Для WARDOGS начните с **Phantom (WARDOGS)**. Если Центр управления уже открыт, начинайте со «Стратегии». Включите Оптимизатор большой кнопкой и только затем запускайте игру. PRO и VPN для игровых профилей не нужны.
+7. Для Discord/YouTube начните с обычного **Phantom** или **«Автоподбор»** общих стратегий. Проверяйте само видео, голосовой канал или матч. Для игры сравнивайте её профили вручную по одному; автоподбор тестирует общие стратегии.
+
+Как проверить скачивание в PowerShell из папки загрузок:
 
 ```powershell
 Get-FileHash .\StabiLink-Desktop-v4.2.7-win-x64.zip -Algorithm SHA256
 ```
 
-Хеш должен совпасть с `.sha256` этого же релиза. Контрольная сумма подтверждает целостность скачивания; она не заменяет проверку официального источника.
+Сравните результат с `.sha256` этого же релиза. [Подробная установка и помощь при запуске](docs/INSTALL.md).
 
-**Уже пользуетесь StabiLink?** Откройте уведомление об обновлении. Перед загрузкой приложение заново проверяет текущую версию, в том числе после ошибки и повторной попытки. Если сервер недоступен, доступна повторная попытка; если обновление уже не нужно, окно сообщит об этом. Штатное обновление сохраняет настройки и вход. [Ручное обновление и удаление →](docs/INSTALL.md)
+**Уже пользуетесь StabiLink?** Предпочтителен встроенный обновлятор: он сохраняет настройки и вход. Крестик окна сворачивает приложение в трей; для ручного обновления нужен **«Выход» в меню значка рядом с часами**. Сохраните старую папку, распакуйте новую отдельно и до первого запуска перенесите свой `local.json` на этом же ПК. Не запускайте две копии и не заменяйте работающий EXE. [Пошаговое обновление с сохранением настроек](docs/INSTALL.md#обновление).
 
 <a id="requirements"></a>
 ## Системные требования
@@ -280,7 +288,7 @@ Get-FileHash .\StabiLink-Desktop-v4.2.7-win-x64.zip -Algorithm SHA256
 
 **Windows 10/11 x64 · 36 strategies · 9 games · Free Optimizer · Optional PRO VPN**
 
-[**Download v4.2.7**](https://github.com/sany86russ/StabiLink-Desktop/releases/tag/v4.2.7) · [Release history](CHANGELOG.md#v427) · [Website](https://stabilink.ru) · [Account](https://apps.stabilink.ru) · [Русский](#navigation)
+[**Download Windows ZIP v4.2.7 · 92 MB**](https://github.com/sany86russ/StabiLink-Desktop/releases/download/v4.2.7/StabiLink-Desktop-v4.2.7-win-x64.zip) · [Release history](CHANGELOG.md#v427) · [Website](https://stabilink.ru) · [Account](https://apps.stabilink.ru) · [Русский](#navigation)
 
 StabiLink.Desktop brings connection profiles, secure DNS, selective VPN routing, diagnostics and PC preparation into one Windows app. Try a game profile when traffic filtering prevents sign-in, a lobby connection or joining a match. For everyday services, start with the general Phantom strategy or automatic selection.
 
@@ -297,7 +305,7 @@ This is the official public distribution and documentation repository. **StabiLi
 
 ### Supported game profiles
 
-All **28 game profiles are free**. Choose **Strategies → Games**, select a profile and click **Apply before starting the game**. Automatic selection compares eight general strategies; it does not test game sessions.
+All **28 game profiles are free**. The app currently shows Russian labels: open **«Расширенный режим» (Expanded mode) → «Стратегии» (Strategies) → «Для игр» (For games)**, select a profile and click **«Применить» (Apply) before starting the game**. Automatic selection compares eight general strategies; it does not test game sessions.
 
 | Game | Connection scenario | Available profiles |
 |---|---|---|
@@ -336,17 +344,25 @@ SecureLink application rules route IPv4. IPv6 is supported for selected domains 
 
 ### Install and sign in
 
-1. Download **StabiLink-Desktop-v4.2.7-win-x64.zip** and its `.sha256` file from the [official release](https://github.com/sany86russ/StabiLink-Desktop/releases/tag/v4.2.7).
-2. Check the SHA-256, then extract **all** files to a permanent writable folder. Do not run the EXE inside the ZIP or move it away from its runtime folders.
-3. Run `StabiLink.Desktop.exe` and approve the Windows administrator prompt. The required .NET runtime is included.
-4. Sign in using **Email code**, password, QR or a device code. Email-code sign-in can create a new account; if you already have PRO, use the same account/email to preserve access to your subscription.
-5. For Discord/YouTube, try Phantom or automatic selection. For a game, choose its game profile, click Apply, enable the Optimizer and test the actual game.
+FREE needs an account but does not require PRO or a payment card. You can create a free account inside the app using your email. The instructions below include the actual Russian button labels shown by the app.
+
+1. **[Download the ready-to-run Windows ZIP · 92 MB](https://github.com/sany86russ/StabiLink-Desktop/releases/download/v4.2.7/StabiLink-Desktop-v4.2.7-win-x64.zip)** and its [SHA-256 file](https://github.com/sany86russ/StabiLink-Desktop/releases/download/v4.2.7/StabiLink-Desktop-v4.2.7-win-x64.zip.sha256); compare the checksum before running the app. On the [release page](https://github.com/sany86russ/StabiLink-Desktop/releases/tag/v4.2.7), expand **Assets** and choose **StabiLink-Desktop-v4.2.7-win-x64.zip**. GitHub's **Source code** archives are not installers.
+2. In File Explorer, right-click the ZIP and choose **Extract All…**. Extract every file to a permanent writable folder, then open that extracted folder.
+3. Run **`StabiLink.Desktop.exe`**. When Windows hides extensions, it appears as **StabiLink.Desktop**, type **Application**. Keep `bin`, `lists` and `Resources` beside it. There is no separate setup program; the .NET runtime is included.
+4. Approve the Windows administrator prompt. Read the agreement, accept it if you agree and click **«Начать работу» (Start)**. At **«Быстрая настройка» (Quick setup)** you can choose **«Пропустить — настрою вручную» (Skip — configure manually)** to continue with the steps below.
+5. Open **«Email код» (Email code)**, enter your email and click **«Получить код» (Get code)**. Enter the six digits from the email, then click **«Проверить код» (Verify code)**. A new email can create a new account. If you already paid for PRO, use the same linked email/account. Telegram is optional; password, QR and device-code sign-in are also available.
+6. For a game, open **«Расширенный режим» → «Стратегии» → «Для игр»**, choose your game and profile, then click **«Применить»**. For WARDOGS start with **Phantom (WARDOGS)**. If Control Center is already open, start at «Стратегии». Enable the Optimizer using the large power button before launching the game. Game profiles need neither PRO nor VPN.
+7. For Discord/YouTube start with the general **Phantom** strategy or **«Автоподбор» (Auto-select)**. Automatic selection tests general strategies; compare game profiles manually. Check the real video, voice call or game after the connection test.
 
 ```powershell
 Get-FileHash .\StabiLink-Desktop-v4.2.7-win-x64.zip -Algorithm SHA256
 ```
 
-The result must match the release's `.sha256` file. Updates preserve settings through the normal updater; fully exit the old app before a manual replacement. Never replace individual runtime DLLs or drivers with files from other packages.
+Compare the result with the release's `.sha256` file. If Windows blocks launch, keep the exact message and contact [support](SUPPORT.md); do not disable antivirus or replace individual runtime files.
+
+### Updating an existing installation
+
+Prefer the built-in updater to retain settings and sign-in. For a manual update, **fully exit using «Выход» (Exit) in the tray menu beside the Windows clock**; the window's X button only hides it in the tray. Keep a copy of the old folder and logs. Extract the new version to a separate permanent folder, then copy your own `local.json` into it **on the same PC, before the first launch**, replacing the clean template. This file can contain account data: keep it private. Do not copy old EXEs, DLLs or runtime folders, and do not run two copies together. Keep the old folder until the new version is checked; review autostart settings after changing the installation path. [Detailed update guide](docs/INSTALL.md#обновление).
 
 ### Diagnostics and support
 

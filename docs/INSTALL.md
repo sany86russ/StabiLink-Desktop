@@ -20,7 +20,7 @@
 ## Перед установкой
 
 1. Убедитесь, что используется Windows 10 или Windows 11, x64.
-2. Закройте другие приложения, которые одновременно меняют DNS, системный прокси или обрабатывают сетевой трафик.
+2. Убедитесь, что можете подтвердить запрос прав администратора Windows. Текущую рабочую связь для скачивания менять не нужно; сторонние VPN и сетевые фильтры сравнивайте отдельно при диагностике.
 3. Подготовьте отдельную постоянную папку для StabiLink — например, `C:\StabiLink`.
 
 **Если PRO уже оплачен, войдите в тот же аккаунт, что в кабинете.** Перед первым email-входом привяжите нужную почту к оплаченному аккаунту, чтобы случайно не создать второй.
@@ -29,9 +29,9 @@
 
 ## Загрузка
 
-1. Откройте [последний Release](https://github.com/sany86russ/StabiLink-Desktop/releases/latest).
-2. Скачайте готовый ZIP релиза; для v4.2.7 — `StabiLink-Desktop-v4.2.7-win-x64.zip`. Автоматические архивы «Source code» не являются установщиком.
-3. Скачайте соседний файл `.sha256` либо скопируйте хеш из описания Release.
+1. **[Скачать готовый ZIP v4.2.7 · 92 МБ](https://github.com/sany86russ/StabiLink-Desktop/releases/download/v4.2.7/StabiLink-Desktop-v4.2.7-win-x64.zip)**. Это прямая загрузка приложения для Windows 10/11 x64.
+2. Если предпочитаете [страницу релиза](https://github.com/sany86russ/StabiLink-Desktop/releases/tag/v4.2.7), раскройте **Assets** и нажмите **StabiLink-Desktop-v4.2.7-win-x64.zip**. Автоматические архивы **Source code (zip)** и **Source code (tar.gz)** содержат документацию и не являются приложением.
+3. [Скачайте файл `.sha256`](https://github.com/sany86russ/StabiLink-Desktop/releases/download/v4.2.7/StabiLink-Desktop-v4.2.7-win-x64.zip.sha256) либо скопируйте хеш из описания этого же Release.
 4. Не скачивайте отдельные DLL/EXE из сообщений, файлообменников и неофициальных зеркал.
 
 ## Проверка SHA-256
@@ -46,20 +46,22 @@ Get-FileHash .\StabiLink-Desktop-v4.2.7-win-x64.zip -Algorithm SHA256
 
 ## Распаковка и запуск
 
-1. Нажмите по ZIP правой кнопкой и выберите извлечение всех файлов.
-2. Откройте полученную папку.
-3. Запустите `StabiLink.Desktop.exe`.
-4. Подтвердите запрос контроля учётных записей Windows.
-5. Прочитайте приветствие и пользовательские условия.
-6. Авторизуйтесь одним из четырёх способов.
+1. Откройте загрузки в Проводнике, нажмите по ZIP правой кнопкой → **«Извлечь все…»** и выберите постоянную папку, например `C:\StabiLink`.
+2. После извлечения откройте полученную папку. В ней должны быть **`StabiLink.Desktop.exe`** и папки **`bin`**, **`lists`**, **`Resources`**.
+3. Запустите **`StabiLink.Desktop.exe`**. При скрытых расширениях это **StabiLink.Desktop**, тип **«Приложение»**. Отдельного `.msi`/`setup.exe` в этой поставке нет; среда .NET уже включена.
+4. Подтвердите запрос контроля учётных записей Windows. Без прав администратора сетевые компоненты не запустятся; если этих прав нет, нужен администратор вашего ПК.
+5. Прочитайте соглашение. После согласия нажмите **«Начать работу»**. На экране **«Быстрая настройка»** можно выбрать **«Пропустить — настрою вручную»**, чтобы затем применить нужный профиль по инструкции ниже. При автоматической настройке дождитесь результата и нажмите **«Готово»**.
+6. Войдите в аккаунт одним из четырёх способов. Для первого запуска FREE достаточно своей почты; покупать PRO не нужно.
 
-Не запускайте приложение непосредственно из ZIP — сетевые компоненты, журналы и обновление могут работать некорректно.
+Не запускайте EXE из открытого ZIP и не переносите его отдельно от остальных файлов. Папка должна быть доступна для записи настроек, журналов и обновлений.
+
+**Если запуск не удался:** сначала проверьте полную распаковку, имя EXE и Windows x64. Если Windows показывает блокировку или предупреждение, сохраните точный текст и передайте его [поддержке](../SUPPORT.md). Не отключайте антивирус и не скачивайте недостающие DLL с посторонних сайтов.
 
 ## Авторизация
 
 Окно входа предлагает четыре вкладки: «Пароль», «QR», «Email код» и «TG код». Все ведут в один аккаунт.
 
-**Не знаете, что выбрать — берите «Email код»:** введите почту, получите код в письме, введите его. Если аккаунта ещё нет, он создастся автоматически, и пароль придумывать не нужно.
+**Для первого входа выберите «Email код»:** введите почту → **«Получить код»** → введите шесть цифр из письма → **«Проверить код»**. У нового пользователя аккаунт создастся автоматически; пароль, Telegram и платёжная карта не нужны.
 
 Нет второго устройства для QR? На вкладке «QR» нажмите «🖥 Открыть в браузере на этом ПК» — подтверждение откроется здесь же.
 
@@ -67,7 +69,7 @@ Get-FileHash .\StabiLink-Desktop-v4.2.7-win-x64.zip -Algorithm SHA256
 
 ## Рекомендуемая первичная настройка
 
-Для Discord/YouTube начните с Phantom или автоподбора. Для игры откройте «Стратегии → Для игр», выберите её профиль и нажмите «Применить» до запуска игры. Все игровые профили доступны бесплатно. [Каталог игр](../README.md#games).
+Если открылось компактное окно, нажмите **«Расширенный режим»**. Для игры откройте **«Стратегии → Для игр»**, выберите игру и профиль, нажмите **«Применить»**. Для WARDOGS начните с **Phantom (WARDOGS)**. Включите Оптимизатор большой кнопкой и затем запускайте игру. Все игровые профили доступны бесплатно, SecureLink для них не обязателен. Для Discord/YouTube начните с обычного Phantom или автоподбора общих стратегий. [Каталог игр](../README.md#games).
 
 - Game Filter — включён;
 - режим Game Filter — `TCP + UDP`;
@@ -89,22 +91,26 @@ Get-FileHash .\StabiLink-Desktop-v4.2.7-win-x64.zip -Algorithm SHA256
 
 ## Обновление
 
-В v4.2.7 перед скачиванием и повторной попыткой приложение заново проверяет последнюю версию. Если сервер недоступен, предложит повторить попытку; если обновление больше не нужно, сообщит об этом без установки.
+**Предпочтителен встроенный обновлятор.** Он сохраняет настройки и вход, проверяет актуальную версию перед скачиванием и повторной попыткой. Необязательное обновление можно отложить; при версии ниже минимально поддерживаемой потребуется обновиться.
 
-StabiLink сообщит о новой версии внутри приложения. Необязательное обновление можно отложить; критическое обновление потребуется установить для продолжения работы.
+При ручном обновлении на этом же компьютере:
 
-Пользовательские настройки и данные авторизации должны сохраняться при штатном обновлении. Перед ручной заменой каталога закройте приложение через трей.
+1. [Скачайте официальный ZIP](https://github.com/sany86russ/StabiLink-Desktop/releases/download/v4.2.7/StabiLink-Desktop-v4.2.7-win-x64.zip) и сверьте SHA-256.
+2. Полностью завершите старую версию: значок StabiLink в трее рядом с часами Windows → **«Выход»**. Значок может быть скрыт под стрелкой вверх. **Крестик окна сворачивает его в трей и не завершает приложение.**
+3. Сохраните копию старой папки. В ней особенно важны ваш **`local.json`** и каталог **`logs`**. Не удаляйте её до проверки новой версии.
+4. Распакуйте новый ZIP в **отдельную постоянную папку**. Не заменяйте работающий EXE и не запускайте две копии одновременно.
+5. **До первого запуска** перенесите свой сохранённый **`local.json`** из старой папки в новую вместо пустого файла из архива. Это перенос ваших настроек на том же ПК. В файле могут быть данные аккаунта: не публикуйте его и не передавайте другим людям.
+6. Не переносите старые EXE, DLL, `bin` и `lists` поверх новой поставки. Старые журналы оставьте в резервной копии.
+7. Запустите новую версию, проверьте **4.2.7** в разделе **«О программе»**, настройки и нужное подключение. После смены папки проверьте автозапуск; при необходимости выключите и включите его заново в настройках новой версии.
 
-При ручном обновлении:
-
-1. скачайте новый официальный Release;
-2. проверьте SHA-256;
-3. полностью завершите старую версию;
-4. распакуйте новую сборку;
-5. не переносите из старой папки исполняемые файлы или библиотеки;
-6. запустите новую версию и проверьте номер в разделе «О программе».
-
+Если новая версия не запускается, сохранённая папка остаётся для восстановления. Не держите одновременно запущенными старую и новую копии. [Помощь с обновлением](../SUPPORT.md).
 
 ## English quick install
 
-Download the official v4.2.7 ZIP and `.sha256` from [Releases](https://github.com/sany86russ/StabiLink-Desktop/releases/latest). Verify the checksum, extract every file to a permanent writable folder and run `StabiLink.Desktop.exe` as administrator. The .NET runtime is included. Use the same account as your paid subscription; Email code can create a separate account when the email is new. Choose Phantom for general services or your game's profile under Strategies → Games, click Apply and enable the Optimizer. [Full English guide](../README.md#english).
+1. [Download the Windows v4.2.7 ZIP · 92 MB](https://github.com/sany86russ/StabiLink-Desktop/releases/download/v4.2.7/StabiLink-Desktop-v4.2.7-win-x64.zip) and [SHA-256 file](https://github.com/sany86russ/StabiLink-Desktop/releases/download/v4.2.7/StabiLink-Desktop-v4.2.7-win-x64.zip.sha256). On the [release page](https://github.com/sany86russ/StabiLink-Desktop/releases/tag/v4.2.7), use **Assets → StabiLink-Desktop-v4.2.7-win-x64.zip**, not **Source code**.
+2. In File Explorer use **Extract All…**, then open the extracted folder. Run **StabiLink.Desktop.exe** (shown as **StabiLink.Desktop**, type **Application**, if extensions are hidden). Keep `bin`, `lists` and `Resources` beside it. The .NET runtime is included.
+3. Approve the Windows administrator prompt, read and accept the agreement if you agree, then click **«Начать работу»**. In **«Быстрая настройка»**, **«Пропустить — настрою вручную»** skips optional automatic setup; **«Готово»** completes automatic setup.
+4. Open **«Email код» → enter email → «Получить код» → enter the six email digits → «Проверить код»**. A free account can be created here without a payment card or Telegram. Existing PRO users must use the same linked email/account.
+5. For a game open **«Расширенный режим» → «Стратегии» → «Для игр»**, choose the game/profile and click **«Применить»**. For WARDOGS start with **Phantom (WARDOGS)**. Enable the Optimizer before starting the game. PRO and VPN are optional for these game profiles. For general services use Phantom or **«Автоподбор»**.
+
+Prefer the built-in updater. For a manual update, use **«Выход» (Exit)** in the tray menu, back up the old folder, extract the new version separately and copy your own **local.json on the same PC before its first launch**. Keep this file private, keep the old logs, do not copy old runtime files and do not run two copies together. [Full English guide](../README.md#english).

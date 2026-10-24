@@ -1,6 +1,6 @@
 <div align="center">
 
-![StabiLink Desktop — подключение, игры и управление Windows](assets/stabilink-v3.png)
+![Фирменная иллюстрация StabiLink: игры, голосовая связь и видео в едином подключении](assets/stabilink-v3.png)
 
 # StabiLink Desktop — подключение к играм, Discord и YouTube на Windows
 

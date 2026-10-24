@@ -13,6 +13,7 @@
 - [Рекомендуемая первичная настройка](#рекомендуемая-первичная-настройка)
 - [Удаление](#удаление)
 - [Обновление](#обновление)
+- [English quick install](#english-quick-install)
 
 </details>
 
@@ -22,12 +23,14 @@
 2. Закройте другие приложения, которые одновременно меняют DNS, системный прокси или обрабатывают сетевой трафик.
 3. Подготовьте отдельную постоянную папку для StabiLink — например, `C:\StabiLink`.
 
+**Если PRO уже оплачен, войдите в тот же аккаунт, что в кабинете.** Перед первым email-входом привяжите нужную почту к оплаченному аккаунту, чтобы случайно не создать второй.
+
 Аккаунт заранее создавать **не нужно**: при первом входе можно ввести почту на вкладке «Email код», и аккаунт создастся автоматически. Регистрация на [apps.stabilink.ru](https://apps.stabilink.ru) пригодится, если хотите сразу задать пароль или оплатить PRO.
 
 ## Загрузка
 
 1. Откройте [последний Release](https://github.com/sany86russ/StabiLink-Desktop/releases/latest).
-2. Скачайте готовый ZIP релиза; для v4.2.0 — `StabiLink-Desktop-v4.2.0-win-x64.zip`. Автоматические архивы «Source code» не являются установщиком.
+2. Скачайте готовый ZIP релиза; для v4.2.7 — `StabiLink-Desktop-v4.2.7-win-x64.zip`. Автоматические архивы «Source code» не являются установщиком.
 3. Скачайте соседний файл `.sha256` либо скопируйте хеш из описания Release.
 4. Не скачивайте отдельные DLL/EXE из сообщений, файлообменников и неофициальных зеркал.
 
@@ -36,7 +39,7 @@
 Откройте PowerShell в папке загрузок:
 
 ```powershell
-Get-FileHash .\StabiLink-Desktop-v4.2.0-win-x64.zip -Algorithm SHA256
+Get-FileHash .\StabiLink-Desktop-v4.2.7-win-x64.zip -Algorithm SHA256
 ```
 
 Значение должно полностью совпасть с опубликованным. При несовпадении удалите архив и скачайте его заново.
@@ -70,6 +73,7 @@ Get-FileHash .\StabiLink-Desktop-v4.2.0-win-x64.zip -Algorithm SHA256
 - режим Game Filter — `TCP + UDP`;
 - порты — стандартные;
 - TurboDNS — включить вручную после проверки обычной оптимизации;
+- автосмена вариантов, запоминание удачных вариантов и группировка пакетов — выключены по умолчанию;
 - уведомления — включены;
 - запуск в трее — по желанию;
 - PRO: «VPN вместе с оптимизацией» — по желанию.
@@ -85,7 +89,7 @@ Get-FileHash .\StabiLink-Desktop-v4.2.0-win-x64.zip -Algorithm SHA256
 
 ## Обновление
 
-В v4.2.0 перед скачиванием и повторной попыткой приложение заново проверяет последнюю версию. Если сервер недоступен, предложит повторить попытку; если обновление больше не нужно, сообщит об этом без установки.
+В v4.2.7 перед скачиванием и повторной попыткой приложение заново проверяет последнюю версию. Если сервер недоступен, предложит повторить попытку; если обновление больше не нужно, сообщит об этом без установки.
 
 StabiLink сообщит о новой версии внутри приложения. Необязательное обновление можно отложить; критическое обновление потребуется установить для продолжения работы.
 
@@ -99,3 +103,8 @@ StabiLink сообщит о новой версии внутри приложе�
 4. распакуйте новую сборку;
 5. не переносите из старой папки исполняемые файлы или библиотеки;
 6. запустите новую версию и проверьте номер в разделе «О программе».
+
+
+## English quick install
+
+Download the official v4.2.7 ZIP and `.sha256` from [Releases](https://github.com/sany86russ/StabiLink-Desktop/releases/latest). Verify the checksum, extract every file to a permanent writable folder and run `StabiLink.Desktop.exe` as administrator. The .NET runtime is included. Use the same account as your paid subscription; Email code can create a separate account when the email is new. Choose Phantom for general services or your game's profile under Strategies → Games, click Apply and enable the Optimizer. [Full English guide](../README.md#english).

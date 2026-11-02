@@ -2,13 +2,13 @@
 
 # StabiLink Desktop — подключение к играм, Discord и YouTube на Windows
 
-**WARDOGS · Mistfall Hunter · PEAK · R.E.P.O. · Fallout 76 · Rainbow Six Siege · Dead by Daylight · Marvel Rivals · THE FINALS**
+**Aion 2 (GLOBAL) · WARDOGS · Mistfall Hunter · PEAK · R.E.P.O. · Fallout 76 · Rainbow Six Siege · Dead by Daylight · Marvel Rivals · THE FINALS**
 
 [![Последний релиз](https://img.shields.io/github/v/release/sany86russ/StabiLink-Desktop?label=релиз&color=16c7d9)](https://github.com/sany86russ/StabiLink-Desktop/releases/latest)
 [![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011%20x64-1d91d0)](#requirements)
 [![Лицензия](https://img.shields.io/badge/StabiLink-проприетарная-8b5cf6)](LICENSE.md)
 
-[**Скачать ZIP v4.2.7 · 92 МБ**](https://github.com/sany86russ/StabiLink-Desktop/releases/download/v4.2.7/StabiLink-Desktop-v4.2.7-win-x64.zip) · [**Что нового**](CHANGELOG.md#v427) · [**Установка и первый запуск**](docs/FIRST_START.md) · [English](#english) · [Сайт](https://stabilink.ru) · [Личный кабинет](https://apps.stabilink.ru)
+[**Скачать ZIP v4.3.0**](https://github.com/sany86russ/StabiLink-Desktop/releases/download/v4.3.0/StabiLink-Desktop-v4.3.0-win-x64.zip) · [**Что нового**](CHANGELOG.md#v430) · [**Установка и первый запуск**](docs/FIRST_START.md) · [English](#english) · [Сайт](https://stabilink.ru) · [Личный кабинет](https://apps.stabilink.ru)
 
 Windows 10/11 x64 · Распакуйте весь ZIP · Запустите `StabiLink.Desktop.exe`
 
@@ -16,7 +16,7 @@ Windows 10/11 x64 · Распакуйте весь ZIP · Запустите `St
 
 </div>
 
-**Игра не подключается к серверу, не пускает в лобби или теряет соединение с матчем?** StabiLink.Desktop объединяет бесплатный Оптимизатор трафика с готовыми игровыми профилями, настройками для Discord и YouTube, диагностикой и обновлениями. В v4.2.7 доступны **36 встроенных стратегий: 8 общих и 28 игровых для 9 игр**. Выберите игру, примените профиль и проверьте подключение.
+**Игра не подключается к серверу, не пускает в лобби или теряет соединение с матчем?** StabiLink.Desktop объединяет бесплатный Оптимизатор трафика с готовыми игровыми профилями, настройками для Discord и YouTube, диагностикой и обновлениями. В v4.3.0 доступны **39 встроенных стратегий: 8 общих и 31 игровая для 10 игр**. Выберите игру, примените профиль и проверьте подключение.
 
 Для PRO также доступны **SecureLink VPN**, маршрутизация выбранных игр и приложений, **Performance Hub** для подготовки ПК и персональная **Sub URL** для телефона. **TurboDNS** доступен FREE и PRO.
 
@@ -28,7 +28,7 @@ Windows 10/11 x64 · Распакуйте весь ZIP · Запустите `St
 | Ваша задача | Куда перейти |
 |---|---|
 | Скачать, установить, войти | [Быстрый старт](#start) · [Установка](docs/INSTALL.md) · [Авторизация](docs/FIRST_START.md) |
-| Исправить подключение к игре | [Каталог 9 игр](#games) · [WARDOGS](#wardogs) · [Mistfall Hunter](#mistfall-hunter) · [Порядок проверки](#game-steps) |
+| Исправить подключение к игре | [Каталог 10 игр](#games) · [Aion 2 (GLOBAL)](#aion-2-global) · [WARDOGS](#wardogs) · [Mistfall Hunter](#mistfall-hunter) · [Порядок проверки](#game-steps) |
 | Подключить Discord или YouTube | [Общие стратегии](#strategies) · [Ответы о сервисах](#faq) |
 | Выбрать VPN, DNS и совместный режим | [Модули](#modules) · [Совместимость и диагностика](docs/MODES.md) |
 | Подготовить ПК к игре | [Performance Hub](#performance) · [Утилиты](docs/CONTROL_CENTER.md#утилиты) |
@@ -36,31 +36,31 @@ Windows 10/11 x64 · Распакуйте весь ZIP · Запустите `St
 | Найти инструкцию или сообщить о сбое | [Все руководства](#docs) · [FAQ](docs/FAQ.md) · [Поддержка](SUPPORT.md) · [Создать Issue](https://github.com/sany86russ/StabiLink-Desktop/issues/new/choose) |
 
 <a id="new"></a>
-## Что нового в v4.2.7
+## Что нового в v4.3.0
 
-**Стабильнее DNS, понятнее диагностика, аккуратнее совместная работа с VPN.** Последний публичный выпуск объединяет доработки ветки 4.2.1–4.2.7:
+**Aion 2 (GLOBAL), меньше лишней обработки TCP и точнее состояние SecureLink.** В 4.3.0:
 
-- **DNS проверяется при запуске Оптимизатора.** При подтверждённой проблеме приложение может временно применить проверенный защищённый DNS, затем проверить результат. Исправный DNS и корпоративные политики сохраняют приоритет.
-- **SecureLink восстанавливает DNS после временных сбоев**, корректно обрабатывает разные типы запросов и отдельно проверяет IPv4/IPv6. Результат старой сети не подменяет новую проверку.
-- **Phantom и WARDOGS:** обновлён HTTPS-путь Google/YouTube, сохранены отдельные игровые правила и голосовые исключения Discord. Игру, сайты и голос можно проверять в одном сценарии.
-- **Split Tunnel:** выбранное приложение направляет через VPN свой IPv4-трафик; IPv6 поддерживается для выбранных доменов и IP-подсетей при поддержке сервера. Прямые исключения остаются прямыми.
-- **Performance Hub разделяет физическую и выделенную память, показывает крупные приложения.** Автоматических сбросов кэша по таймеру больше нет; результаты игровой сессии сохраняются после её завершения.
-- **Запись проблемы приложения:** ограниченный диагностический сеанс с нагрузкой, памятью, временем ошибки и доступными журналами. Отчёт сохраняется локально, автоматической отправки нет.
-- **Надёжнее загрузка обновлений и завершение модулей.** Дополнительные функции автосмены, обучения и группировки пакетов выключены по умолчанию; ускоренный движок не требует их включения.
+- **Три игровых профиля Aion 2:** Phantom (Aion 2), Phoenix (Aion 2) и Phantom (Aion 2 ALT). Они предназначены для проверки ошибок авторизации, входа и подключения; выбираются вручную до запуска игры.
+- **Адреса Aion 2 уже встроены.** Дописывать их в списки не нужно; Game Filter можно оставить включённым. Настройки Discord и YouTube в игровых профилях сохранены.
+- **Меньше лишних пустых TCP-пакетов в обработке.** Игровой счётчик Aion 2 сохраняется, а выбор его профиля больше не включает дополнительный перехват пустых подтверждений общих веб-соединений.
+- **Native-компонент x9** на прежней проверенной основе защищает расчёт TCP-окна от некорректно больших входящих значений. Обычные игровые рецепты и дополнительные настройки группировки пакетов сохранены.
+- **SecureLink показывает «Частичный доступ»**, если туннель включён, но часть сервисов не отвечает. Ответ контрольного адреса обозначается как «туннель отвечает»; при сбое выполняется ограниченное сравнение обычного пути с VPN.
+- **IPv4/IPv6, DNS и диагностика:** отдельные физические пути по семействам адресов, проверка результата временного исправления DNS и наблюдение за соединениями WARDOGS. Диагностический отчёт дополнен ограниченной историей проверок сервисов.
 
-[Полная история 4.2.1–4.2.7 и SHA-256 →](CHANGELOG.md#v427)
+[Полный ChangeLog 4.3.0 и загрузка →](CHANGELOG.md#v430)
 
 ![Каталог игровых стратегий StabiLink Desktop: поиск, категории и выбор игры](assets/strategies.png)
 
-Свежие экраны 4.2.7 показывают настоящий интерфейс с демонстрационными данными. Каталог содержит 36 стратегий для 9 игр и общих сервисов; показатели на иллюстрациях не являются измерениями вашей сети.
+Иллюстрации интерфейса сделаны в 4.2.7 с демонстрационными данными. В 4.3.0 каталог расширен до 39 стратегий для 10 игр и общих сервисов; показатели на изображениях не являются измерениями вашей сети.
 
 <a id="games"></a>
 ## Игры в StabiLink Desktop: готовые профили подключения
 
-**Все 28 игровых профилей доступны бесплатно.** Подписка PRO для выбора стратегии не нужна. Профиль предназначен для проверки сетевого пути, когда фильтрация трафика мешает входу или соединению. Симптом в таблице помогает выбрать сценарий проверки и сам по себе не устанавливает причину сбоя.
+**Все игровые профили (31) доступны бесплатно.** Подписка PRO для выбора стратегии не нужна. Профиль предназначен для проверки сетевого пути, когда фильтрация трафика мешает входу или соединению. Симптом в таблице помогает выбрать сценарий проверки и сам по себе не устанавливает причину сбоя.
 
-| Игра | Когда попробовать | Профили в v4.2.7 |
+| Игра | Когда попробовать | Профили в v4.3.0 |
 |---|---|---|
+| [**Aion 2 (GLOBAL)**](#aion-2-global) | Не проходит авторизация, таймаут входа, лаунчер или игра не подключается к серверу | Phantom (Aion 2), Phoenix (Aion 2), Phantom (Aion 2 ALT) |
 | [**WARDOGS / Wardogs**](#wardogs) | Ошибка входа, не подключается к матчу, возврат в меню или потеря соединения | Phantom (WARDOGS), Phantom (WARDOGS ALT), Phoenix (WARDOGS), Phoenix (WARDOGS ALT) |
 | [**Mistfall Hunter**](#mistfall-hunter) | Сервер недоступен, таймаут входа, разрыв подключения к игре | Phantom (MH), Phoenix (MH), Phantom (MH ALT) |
 | [**PEAK**](#coop) | Не получается подключиться к друзьям или теряется связь при входе в лобби | Phantom (PEAK), Phoenix (PEAK), Phantom (PEAK ALT) |
@@ -70,6 +70,15 @@ Windows 10/11 x64 · Распакуйте весь ZIP · Запустите `St
 | [**Dead by Daylight / DBD**](#dead-by-daylight) | Ошибка подключения к сервисам игры, не удаётся войти | Phantom (Dead by Daylight), Phoenix (Dead by Daylight), Phantom (Dead by Daylight ALT) |
 | [**Marvel Rivals**](#marvel-rivals) | Загрузка матча зависает на **0%**, не устанавливается соединение | Phantom (Marvel Rivals), Phoenix (Marvel Rivals), Phantom (Marvel Rivals ALT) |
 | [**THE FINALS**](#the-finals) | Ошибка **TFGE0001**, проблема связи с сервисом проверки игры | Phantom (THE FINALS), Phoenix (THE FINALS), Phantom (THE FINALS ALT) |
+
+<a id="aion-2-global"></a>
+### Aion 2 (GLOBAL): ошибка авторизации, входа или подключения
+
+Откройте **«Стратегии → Для игр → Aion 2»** и примените **Phantom (Aion 2)** до запуска игры. Если ошибка входа или соединения сохраняется, полностью закройте игру и лаунчер, затем по одному сравните **Phoenix (Aion 2)** и **Phantom (Aion 2 ALT)**.
+
+**Game Filter можно оставить включённым.** Адресная область Aion 2 уже входит в профили: добавлять подсети в `list-general.txt` или `ipset-all.txt` не требуется. Правила Discord и YouTube сохранены; проверяйте голос, видео и реальное игровое подключение отдельно.
+
+Работа Aion 2 подтверждена пользовательской проверкой. Это не означает проверки всех трёх вариантов на каждом провайдере или длительной одновременной игры с голосом и видео. Очередь, обслуживание серверов и ограничения аккаунта требуют отдельной проверки.
 
 <a id="wardogs"></a>
 ### WARDOGS: не подключается к матчу, ошибка входа или разрыв соединения
@@ -89,7 +98,7 @@ Windows 10/11 x64 · Распакуйте весь ZIP · Запустите `St
 <a id="mistfall-hunter"></a>
 ### Mistfall Hunter: сервер недоступен, таймаут или потеря соединения
 
-Откройте **«Стратегии → Для игр → Mistfall Hunter»** и начните с **Phantom (MH)**. В v4.2.7 доступны ещё **Phoenix (MH)** и **Phantom (MH ALT)**. Поиск по `Mistfall Hunter` находит все три варианта, несмотря на сокращение MH в карточках.
+Откройте **«Стратегии → Для игр → Mistfall Hunter»** и начните с **Phantom (MH)**. В v4.3.0 доступны ещё **Phoenix (MH)** и **Phantom (MH ALT)**. Поиск по `Mistfall Hunter` находит все три варианта, несмотря на сокращение MH в карточках.
 
 При сообщении «Текущий сервер недоступен», возврате в меню или разрыве связи проверяйте варианты по одному. **UE/Fatal Error, видеодрайвер и ошибки античита** относятся к другим причинам: профиль соединения не исправляет любой вылет Mistfall Hunter.
 
@@ -126,7 +135,7 @@ Windows 10/11 x64 · Распакуйте весь ZIP · Запустите `St
 <a id="game-steps"></a>
 ### Как проверить игровой профиль
 
-1. Обновитесь до **v4.2.7** и закройте игру.
+1. Обновитесь до **v4.3.0** и закройте игру.
 2. Откройте **«Стратегии → Для игр»**, выберите игру или найдите её по полному названию.
 3. Выберите профиль и нажмите **«Применить»**. Убедитесь, что Оптимизатор включён и выбранный вариант отображается как активный.
 4. Запустите игру; проверьте вход, лобби, матч и голосовой чат.
@@ -166,7 +175,7 @@ Windows 10/11 x64 · Распакуйте весь ZIP · Запустите `St
 
 **SecureLink и TurboDNS включаются по отдельности**, поскольку оба управляют DNS. Оптимизатор может работать с подходящим режимом. В SecureLink можно выбрать установленную игру, её папку или `.exe`; изменения маршрутов применяются при следующем подключении VPN. Маршрутизация через VPN и игровой профиль Оптимизатора — разные настройки. [Матрица совместимости →](docs/MODES.md)
 
-Другие игры также можно выбирать для маршрутизации SecureLink. Это не означает наличие отдельного профиля: встроенный каталог v4.2.7 содержит именно девять игр из [таблицы](#games).
+Другие игры также можно выбирать для маршрутизации SecureLink. Это не означает наличие отдельного профиля: встроенный каталог v4.3.0 содержит именно десять игр из [таблицы](#games).
 
 <a id="performance"></a>
 ## Performance Hub: подготовка Windows к игре
@@ -207,7 +216,7 @@ Windows 10/11 x64 · Распакуйте весь ZIP · Запустите `St
 
 **Первый запуск FREE не требует покупки PRO или банковской карты.** Вход в бесплатный аккаунт нужен; его можно создать прямо в приложении по email.
 
-1. **[Скачайте ZIP v4.2.7 для Windows · 92 МБ](https://github.com/sany86russ/StabiLink-Desktop/releases/download/v4.2.7/StabiLink-Desktop-v4.2.7-win-x64.zip)**. Это готовое приложение. Если открываете [страницу релиза](https://github.com/sany86russ/StabiLink-Desktop/releases/tag/v4.2.7), раскройте **Assets** и выберите `StabiLink-Desktop-v4.2.7-win-x64.zip`; архивы **Source code** для установки не подходят. До запуска сверьте [SHA-256](https://github.com/sany86russ/StabiLink-Desktop/releases/download/v4.2.7/StabiLink-Desktop-v4.2.7-win-x64.zip.sha256) по [инструкции проверки](docs/INSTALL.md#проверка-sha-256).
+1. **[Скачайте ZIP v4.3.0 для Windows](https://github.com/sany86russ/StabiLink-Desktop/releases/download/v4.3.0/StabiLink-Desktop-v4.3.0-win-x64.zip)**. Это готовое приложение. Если открываете [страницу релиза](https://github.com/sany86russ/StabiLink-Desktop/releases/tag/v4.3.0), раскройте **Assets** и выберите `StabiLink-Desktop-v4.3.0-win-x64.zip`; архивы **Source code** для установки не подходят. До запуска сверьте [SHA-256](https://github.com/sany86russ/StabiLink-Desktop/releases/download/v4.3.0/StabiLink-Desktop-v4.3.0-win-x64.zip.sha256) по [инструкции проверки](docs/INSTALL.md#проверка-sha-256).
 2. В Проводнике нажмите по ZIP правой кнопкой → **«Извлечь все…»**. Распакуйте всё в постоянную папку, например `C:\StabiLink`, затем откройте именно извлечённую папку.
 3. Запустите **`StabiLink.Desktop.exe`**. Если Windows скрывает расширения, файл называется **StabiLink.Desktop**, тип **«Приложение»**. Рядом должны остаться `bin`, `lists` и `Resources`. Отдельного установщика нет; .NET включён в сборку.
 4. Подтвердите запрос прав администратора Windows. Прочитайте соглашение и нажмите **«Начать работу»** после согласия. На экране **«Быстрая настройка»** можно выбрать **«Пропустить — настрою вручную»**, затем настроить нужный профиль.
@@ -218,7 +227,7 @@ Windows 10/11 x64 · Распакуйте весь ZIP · Запустите `St
 Как проверить скачивание в PowerShell из папки загрузок:
 
 ```powershell
-Get-FileHash .\StabiLink-Desktop-v4.2.7-win-x64.zip -Algorithm SHA256
+Get-FileHash .\StabiLink-Desktop-v4.3.0-win-x64.zip -Algorithm SHA256
 ```
 
 Сравните результат с `.sha256` этого же релиза. [Подробная установка и помощь при запуске](docs/INSTALL.md).
@@ -271,7 +280,7 @@ Get-FileHash .\StabiLink-Desktop-v4.2.7-win-x64.zip -Algorithm SHA256
 | [Sub URL](docs/SUB_URL.md) | Персональные слоты, импорт, смена и потеря телефона |
 | [Karing: Android и iPhone](docs/KARING.md) | Пошаговое подключение со скриншотами |
 | [Приватность и журналы](docs/PRIVACY_AND_LOGS.md) | Сбор отчёта и безопасная передача в поддержку |
-| [История версий](CHANGELOG.md) | v4.2.7, изменения 4.1 и предыдущие релизы |
+| [История версий](CHANGELOG.md) | v4.3.0, изменения 4.1 и предыдущие релизы |
 | [Публикация релизов](docs/RELEASE_PROCESS.md) | Процесс поставки и проверки готового пакета |
 
 [**Все Releases**](https://github.com/sany86russ/StabiLink-Desktop/releases) · [**Сообщить об ошибке**](https://github.com/sany86russ/StabiLink-Desktop/issues/new/choose) · [Обсуждения](https://github.com/sany86russ/StabiLink-Desktop/discussions) · [Помочь документации](CONTRIBUTING.md)
@@ -286,29 +295,29 @@ Get-FileHash .\StabiLink-Desktop-v4.2.7-win-x64.zip -Algorithm SHA256
 <a id="english"></a>
 ## StabiLink Desktop — game connectivity, Discord and YouTube on Windows
 
-**Windows 10/11 x64 · 36 strategies · 9 games · Free Optimizer · Optional PRO VPN**
+**Windows 10/11 x64 · 39 strategies · 10 games · Free Optimizer · Optional PRO VPN**
 
-[**Download Windows ZIP v4.2.7 · 92 MB**](https://github.com/sany86russ/StabiLink-Desktop/releases/download/v4.2.7/StabiLink-Desktop-v4.2.7-win-x64.zip) · [Release history](CHANGELOG.md#v427) · [Website](https://stabilink.ru) · [Account](https://apps.stabilink.ru) · [Русский](#navigation)
+[**Download Windows ZIP v4.3.0**](https://github.com/sany86russ/StabiLink-Desktop/releases/download/v4.3.0/StabiLink-Desktop-v4.3.0-win-x64.zip) · [Release history](CHANGELOG.md#v430) · [Website](https://stabilink.ru) · [Account](https://apps.stabilink.ru) · [Русский](#navigation)
 
 StabiLink.Desktop brings connection profiles, secure DNS, selective VPN routing, diagnostics and PC preparation into one Windows app. Try a game profile when traffic filtering prevents sign-in, a lobby connection or joining a match. For everyday services, start with the general Phantom strategy or automatic selection.
 
 This is the official public distribution and documentation repository. **StabiLink application source code is private.** Download the ready-to-run ZIP from Releases. GitHub's automatic “Source code” archives contain this documentation and are not application installers.
 
-### What's new in 4.2.7
+### What's new in 4.3.0
 
-- Separate IPv4/IPv6 DNS checks and bounded DNS recovery after transient errors.
-- Correct handling of DNS query types with SecureLink and split routing; direct and local exceptions retain priority.
-- A revised Google/YouTube HTTPS path in Phantom and WARDOGS variants while retaining game and Discord voice rules.
-- Clear reporting when a service check succeeds only through a backup CDN endpoint.
-- More reliable update downloads and controlled shutdown of networking components.
-- Changes since public 4.2.0 also include application problem recording, durable game-session summaries and memory monitoring without automatic cache purges.
+- Three manual **Aion 2 (GLOBAL)** profiles for login, authorization and connection troubleshooting. Game Filter can stay enabled; no manual host/IP list edits are needed.
+- Narrower empty-TCP ACK capture retains the game's packet counters without adding unnecessary ACK processing for general web connections.
+- Native revision **x9** adds TCP Window Scale hardening while retaining the tested base, normal game recipes and optional feature defaults.
+- SecureLink distinguishes **partial service availability** from a responding control address and performs a bounded comparison of ordinary and VPN paths after selected failures.
+- Separate physical IPv4/IPv6 paths, verification of temporary DNS repair, WARDOGS connection observation and bounded service-check history improve diagnostics.
 
 ### Supported game profiles
 
-All **28 game profiles are free**. The app currently shows Russian labels: open **«Расширенный режим» (Expanded mode) → «Стратегии» (Strategies) → «Для игр» (For games)**, select a profile and click **«Применить» (Apply) before starting the game**. Automatic selection compares eight general strategies; it does not test game sessions.
+All **31 game profiles are free**. The app currently shows Russian labels: open **«Расширенный режим» (Expanded mode) → «Стратегии» (Strategies) → «Для игр» (For games)**, select a profile and click **«Применить» (Apply) before starting the game**. Automatic selection compares eight general strategies; it does not test game sessions.
 
 | Game | Connection scenario | Available profiles |
 |---|---|---|
+| **[Aion 2 (GLOBAL)](#aion-2-global-en)** | Authorization/login errors, launcher or game connection timeout | Phantom (Aion 2), Phoenix (Aion 2), Phantom (Aion 2 ALT) |
 | **WARDOGS** | Sign-in errors, failed match connection, return to menu | Phantom, Phantom ALT, Phoenix, Phoenix ALT |
 | **Mistfall Hunter** | Login timeout or connection loss | Phantom (MH), Phoenix (MH), Phantom (MH ALT) |
 | **PEAK** | Joining friends or a co-op lobby | Phantom, Phoenix, Phantom ALT |
@@ -318,6 +327,9 @@ All **28 game profiles are free**. The app currently shows Russian labels: open 
 | **Dead by Daylight** | Login or game-service connection errors | Phantom, Phoenix, Phantom ALT |
 | **Marvel Rivals** | Match loading stuck at 0% | Phantom, Phoenix, Phantom ALT |
 | **THE FINALS** | Service connection errors, including TFGE0001 | Phantom, Phoenix, Phantom ALT |
+
+<a id="aion-2-global-en"></a>
+**Aion 2 (GLOBAL):** start with **Phantom (Aion 2)** and apply it before launching the game. If needed, close the game and launcher before comparing **Phoenix (Aion 2)** and **Phantom (Aion 2 ALT)** one at a time. Keep Game Filter enabled and leave `list-general.txt` / `ipset-all.txt` unchanged: the game's address scope is included. Discord/YouTube rules are retained; test actual voice, video and game connection separately. A user reported Aion 2 working; this does not establish every variant, provider or long session.
 
 For WARDOGS, start with **Phantom (WARDOGS)** and compare the alternatives one at a time. Keep SecureLink settings the same during the comparison. Check sign-in, lobby, a real match and voice independently. THE FINALS ALT keeps the game's connection direct while retaining Discord/YouTube handling.
 
@@ -346,7 +358,7 @@ SecureLink application rules route IPv4. IPv6 is supported for selected domains 
 
 FREE needs an account but does not require PRO or a payment card. You can create a free account inside the app using your email. The instructions below include the actual Russian button labels shown by the app.
 
-1. **[Download the ready-to-run Windows ZIP · 92 MB](https://github.com/sany86russ/StabiLink-Desktop/releases/download/v4.2.7/StabiLink-Desktop-v4.2.7-win-x64.zip)** and its [SHA-256 file](https://github.com/sany86russ/StabiLink-Desktop/releases/download/v4.2.7/StabiLink-Desktop-v4.2.7-win-x64.zip.sha256); compare the checksum before running the app. On the [release page](https://github.com/sany86russ/StabiLink-Desktop/releases/tag/v4.2.7), expand **Assets** and choose **StabiLink-Desktop-v4.2.7-win-x64.zip**. GitHub's **Source code** archives are not installers.
+1. **[Download the ready-to-run Windows ZIP](https://github.com/sany86russ/StabiLink-Desktop/releases/download/v4.3.0/StabiLink-Desktop-v4.3.0-win-x64.zip)** and its [SHA-256 file](https://github.com/sany86russ/StabiLink-Desktop/releases/download/v4.3.0/StabiLink-Desktop-v4.3.0-win-x64.zip.sha256); compare the checksum before running the app. On the [release page](https://github.com/sany86russ/StabiLink-Desktop/releases/tag/v4.3.0), expand **Assets** and choose **StabiLink-Desktop-v4.3.0-win-x64.zip**. GitHub's **Source code** archives are not installers.
 2. In File Explorer, right-click the ZIP and choose **Extract All…**. Extract every file to a permanent writable folder, then open that extracted folder.
 3. Run **`StabiLink.Desktop.exe`**. When Windows hides extensions, it appears as **StabiLink.Desktop**, type **Application**. Keep `bin`, `lists` and `Resources` beside it. There is no separate setup program; the .NET runtime is included.
 4. Approve the Windows administrator prompt. Read the agreement, accept it if you agree and click **«Начать работу» (Start)**. At **«Быстрая настройка» (Quick setup)** you can choose **«Пропустить — настрою вручную» (Skip — configure manually)** to continue with the steps below.
@@ -355,7 +367,7 @@ FREE needs an account but does not require PRO or a payment card. You can create
 7. For Discord/YouTube start with the general **Phantom** strategy or **«Автоподбор» (Auto-select)**. Automatic selection tests general strategies; compare game profiles manually. Check the real video, voice call or game after the connection test.
 
 ```powershell
-Get-FileHash .\StabiLink-Desktop-v4.2.7-win-x64.zip -Algorithm SHA256
+Get-FileHash .\StabiLink-Desktop-v4.3.0-win-x64.zip -Algorithm SHA256
 ```
 
 Compare the result with the release's `.sha256` file. If Windows blocks launch, keep the exact message and contact [support](SUPPORT.md); do not disable antivirus or replace individual runtime files.

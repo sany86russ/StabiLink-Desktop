@@ -22,7 +22,7 @@
 
 **Для бесплатного Оптимизатора нужен вход в аккаунт, но не покупка PRO.** Если аккаунта ещё нет, его можно создать по почте прямо в Desktop:
 
-1. **[Скачайте ZIP v4.2.7 · 92 МБ](https://github.com/sany86russ/StabiLink-Desktop/releases/download/v4.2.7/StabiLink-Desktop-v4.2.7-win-x64.zip)** и [сверьте SHA-256](INSTALL.md#проверка-sha-256) до запуска. В Проводнике нажмите по ZIP правой кнопкой → **«Извлечь все…»**, затем откройте извлечённую папку. На GitHub выбирайте этот ZIP в **Assets**, а не **Source code**.
+1. **[Скачайте ZIP v4.3.0](https://github.com/sany86russ/StabiLink-Desktop/releases/download/v4.3.0/StabiLink-Desktop-v4.3.0-win-x64.zip)** и [сверьте SHA-256](INSTALL.md#проверка-sha-256) до запуска. В Проводнике нажмите по ZIP правой кнопкой → **«Извлечь все…»**, затем откройте извлечённую папку. На GitHub выбирайте этот ZIP в **Assets**, а не **Source code**.
 2. Запустите **`StabiLink.Desktop.exe`** и подтвердите запрос прав администратора Windows. При скрытых расширениях он показан как **StabiLink.Desktop**, тип **«Приложение»**.
 3. Прочитайте соглашение, подтвердите согласие и нажмите **«Начать работу»**. На экране **«Быстрая настройка»** можно выбрать **«Пропустить — настрою вручную»**.
 4. В окне входа: **«Email код» → ваша почта → «Получить код» → шесть цифр из письма → «Проверить код»**. У нового пользователя аккаунт создастся автоматически. Если PRO уже оплачен, используйте тот же аккаунт и привязанный email.
@@ -49,7 +49,7 @@ Telegram не обязателен: всё можно сделать через 
 
 ## 2. Скачайте и распакуйте приложение
 
-1. **[Скачайте готовый ZIP v4.2.7](https://github.com/sany86russ/StabiLink-Desktop/releases/download/v4.2.7/StabiLink-Desktop-v4.2.7-win-x64.zip)**. Если открыли [страницу релиза](https://github.com/sany86russ/StabiLink-Desktop/releases/tag/v4.2.7), раскройте **Assets** и выберите **StabiLink-Desktop-v4.2.7-win-x64.zip**. Архивы **Source code** содержат документацию.
+1. **[Скачайте готовый ZIP v4.3.0](https://github.com/sany86russ/StabiLink-Desktop/releases/download/v4.3.0/StabiLink-Desktop-v4.3.0-win-x64.zip)**. Если открыли [страницу релиза](https://github.com/sany86russ/StabiLink-Desktop/releases/tag/v4.3.0), раскройте **Assets** и выберите **StabiLink-Desktop-v4.3.0-win-x64.zip**. Архивы **Source code** содержат документацию.
 2. Сверьте SHA-256 со значением в описании этого же релиза — см. [Установка](INSTALL.md#проверка-sha-256).
 3. В Проводнике нажмите по ZIP правой кнопкой → **«Извлечь все…»** и распакуйте всё в постоянную папку.
 4. Откройте извлечённую папку и запустите **`StabiLink.Desktop.exe`**. При скрытых расширениях это **StabiLink.Desktop**, тип **«Приложение»**. Папки **`bin`**, **`lists`** и **`Resources`** должны остаться рядом.

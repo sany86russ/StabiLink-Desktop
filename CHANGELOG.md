@@ -55,6 +55,12 @@ Aion 2 (GLOBAL), меньше лишней обработки TCP и точне�
 
 Windows 10/11 x64. Полностью распакуйте архив и запустите `StabiLink.Desktop.exe`; среда .NET включена. Перед запуском сравните SHA-256 ZIP с файлом этого же Release. [Установка](docs/INSTALL.md) · [Aion 2 (GLOBAL)](README.md#aion-2-global) · [English guide](README.md#english).
 
+Публичный ZIP: **92 217 396 байт**. SHA-256:
+
+```text
+5215f835037c99c4145108c3f0496a7da613a81d553fb4889e980e933cb37d69
+```
+
 ### English release summary
 
 **4.3.0 adds Aion 2 (GLOBAL)** with three manual profiles: Phantom (Aion 2), Phoenix (Aion 2) and Phantom (Aion 2 ALT). They support troubleshooting authorization, sign-in and connection failures. Apply a profile before launching the game; Game Filter can stay enabled and no manual host/IP list edits are needed. Discord/YouTube rules are retained. The catalog now has **39 strategies: eight general and 31 free game profiles for 10 games**.

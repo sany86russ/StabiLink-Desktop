@@ -2,6 +2,51 @@
 
 [Руководства](README.md#docs) · [Игры](README.md#games) · [Все релизы](https://github.com/sany86russ/StabiLink-Desktop/releases) · [Поддержка](SUPPORT.md)
 
+<a id="v435"></a>
+## [4.3.5](https://github.com/sany86russ/StabiLink-Desktop/releases/tag/v4.3.5) — 19 ноября 2026
+
+Выпуск объединяет изменения 4.3.1–4.3.5. В Phantom восстановлено открытие Discord и подключение к голосовым каналам. Также доработаны воспроизведение YouTube и Twitch, игровые профили и восстановление соединения SecureLink.
+
+### Discord, YouTube и Twitch
+
+- Исправили зависание Discord на экране загрузки и подключение к голосовым каналам в Phantom, включая игровые варианты. Доработали голосовую связь в Phoenix ALT и Prism.
+- Улучшили загрузку сайтов и воспроизведение YouTube. Исправили сбои Twitch, в том числе ошибку №2000. В Phantom трансляции снова можно открывать без включения SecureLink.
+- Доработали совместимость сайтов и видео в Phoenix, Vector и Prism.
+
+### Игровые профили
+
+- Улучшили работу с лаунчером WARDOGS и игровыми сервисами в Phantom, Phoenix, Vector и Prism. При создании пользовательской копии стратегии сохраняются улучшения совместимости с Twitch и лаунчером WARDOGS.
+- В каталоге доступны **39 стратегий для повседневных сервисов и игр**, включая 31 бесплатный игровой профиль для 10 игр.
+
+### SecureLink
+
+- Обновили способ подключения для сетей, где возникали тайм-ауты. Доработали восстановление после обрыва, совместную работу с Оптимизатором и доступ к сайтам StabiLink.
+- Состояние VPN и доступность отдельных сайтов теперь отображаются отдельно. Это помогает понять, где возникла проблема.
+
+### Оптимизатор и запуск
+
+- Сократили повторную обработку пакетов и улучшили устойчивость движка при ошибках приёма.
+- При задержке обновления списков Оптимизатор запускается с проверенным локальным комплектом. Когда новые списки готовы, они применяются при следующем запуске.
+- Доработали ручной автоподбор Phantom, восстановление автозапуска, ручную остановку и меню в трее.
+
+### Загрузка и проверка
+
+[Скачать StabiLink-Desktop-v4.3.5-win-x64.zip](https://github.com/sany86russ/StabiLink-Desktop/releases/download/v4.3.5/StabiLink-Desktop-v4.3.5-win-x64.zip) · [SHA-256](https://github.com/sany86russ/StabiLink-Desktop/releases/download/v4.3.5/StabiLink-Desktop-v4.3.5-win-x64.zip.sha256)
+
+Для Windows 10/11 x64. Сверьте SHA-256, полностью распакуйте ZIP и запустите `StabiLink.Desktop.exe`. [Установка](https://github.com/sany86russ/StabiLink-Desktop/blob/main/docs/INSTALL.md) · [Первый запуск](https://github.com/sany86russ/StabiLink-Desktop/blob/main/docs/FIRST_START.md)
+
+Размер ZIP — **92 351 345 байт**.
+
+```text
+d941fcaa6685a57976e259ec4a806e4b946419b8f9c55058a254f6850f9f0b63
+```
+
+### English summary
+
+This release includes the changes from 4.3.1 through 4.3.5. Phantom and its game profiles fix Discord startup and voice-channel connections. YouTube and Twitch playback, including Twitch error #2000, and WARDOGS launcher compatibility have been improved. SecureLink recovers more reliably after interruptions and reports VPN status separately from individual service availability. The Optimizer does less repeated packet processing and can start with verified local lists while updates are pending.
+
+Download the Windows ZIP above, check its `.sha256` file and extract all files before running the EXE. [English installation guide](https://github.com/sany86russ/StabiLink-Desktop/blob/main/README.md#english).
+
 <a id="v430"></a>
 ## [4.3.0](https://github.com/sany86russ/StabiLink-Desktop/releases/tag/v4.3.0) — 2 ноября 2026
 

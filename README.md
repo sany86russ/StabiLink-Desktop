@@ -8,17 +8,17 @@
 [![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011%20x64-1d91d0)](#requirements)
 [![Лицензия](https://img.shields.io/badge/StabiLink-проприетарная-8b5cf6)](LICENSE.md)
 
-[**Скачать ZIP v4.4.0**](https://github.com/sany86russ/StabiLink-Desktop/releases/download/v4.4.0/StabiLink-Desktop-v4.4.0-win-x64.zip) · [**Что нового**](CHANGELOG.md#v440) · [**Установка и первый запуск**](docs/FIRST_START.md) · [English](#english) · [Сайт](https://stabilink.ru) · [Личный кабинет](https://apps.stabilink.ru)
+[**Скачать ZIP v4.5.0**](https://github.com/sany86russ/StabiLink-Desktop/releases/download/v4.5.0/StabiLink-Desktop-v4.5.0-win-x64.zip) · [**Что нового**](CHANGELOG.md#v450) · [**Установка и первый запуск**](docs/FIRST_START.md) · [English](#english) · [Сайт](https://stabilink.ru) · [Личный кабинет](https://apps.stabilink.ru)
 
 Windows 10/11 x64 · Распакуйте весь ZIP · Запустите `StabiLink.Desktop.exe`
 
-![Фирменная иллюстрация StabiLink: игры, голосовая связь и видео в едином подключении](assets/stabilink-v3.png)
+![StabiLink Desktop 4.5.0 — WARP от Cloudflare, новый трей и окна приложения](assets/stabilink-v3.png)
 
 </div>
 
-**Игра не подключается к серверу, не пускает в лобби или теряет соединение с матчем?** StabiLink.Desktop объединяет бесплатный Оптимизатор трафика с готовыми игровыми профилями, настройками для Discord и YouTube, диагностикой и обновлениями. В v4.4.0 доступны **39 встроенных стратегий: 8 общих и 31 игровая для 10 игр**. Выберите игру, примените профиль и проверьте подключение.
+**Игра не подключается к серверу, не пускает в лобби или теряет соединение с матчем?** StabiLink.Desktop объединяет бесплатный Оптимизатор трафика с готовыми игровыми профилями, настройками для Discord и YouTube, диагностикой и обновлениями. В v4.5.0 доступны **39 встроенных стратегий: 8 общих и 31 игровая для 10 игр**. Выберите игру, примените профиль и проверьте подключение.
 
-Для PRO также доступны **SecureLink VPN**, маршрутизация выбранных игр и приложений, **Performance Hub** для подготовки ПК и персональная **Sub URL** для телефона. **TurboDNS** доступен FREE и PRO.
+Для PRO также доступны **SecureLink VPN**, маршрутизация выбранных игр и приложений, **Performance Hub** для подготовки ПК и персональная **Sub URL** для телефона. **TurboDNS** и **WARP от Cloudflare** доступны FREE и PRO.
 
 > Официальная публичная витрина StabiLink: готовые Windows-сборки, руководства и обратная связь. Исходный код приложения здесь не публикуется. Скачивайте ZIP из [Releases](https://github.com/sany86russ/StabiLink-Desktop/releases/latest); архивы GitHub «Source code» содержат документацию и не являются установщиком.
 
@@ -36,17 +36,14 @@ Windows 10/11 x64 · Распакуйте весь ZIP · Запустите `St
 | Найти инструкцию или сообщить о сбое | [Все руководства](#docs) · [FAQ](docs/FAQ.md) · [Поддержка](SUPPORT.md) · [Создать Issue](https://github.com/sany86russ/StabiLink-Desktop/issues/new/choose) |
 
 <a id="new"></a>
-## Что нового в v4.4.0
+## Что нового в v4.5.0
 
-Изменения с последнего публичного релиза v4.3.5.
+- **WARP от Cloudflare** доступен Free и Pro в «Подключении», на «Обзоре», в компактном окне и трее. StabiLink зарегистрирует устройство после согласия с условиями Cloudflare. Автоподключение можно включить в «Настройки → Автозапуск».
+- **Подключение и трей.** SecureLink, TurboDNS и WARP имеют отдельные карточки. В трее рядом с названиями отображаются текущие состояния режимов и Оптимизатора трафика.
+- **Диагностика WARP.** Видны этапы подключения и результат проверки Cloudflare. В инструментах восстановления можно сбросить профиль WARP.
+- **Оптимизатор и обновления.** В релиз вошли движок x17 и изменения 4.4.1, включая улучшения обработки трафика, проверки DNS и отката обновлений.
 
-- **Обзор и компактный режим.** Статусы подключения, быстрые переключатели и переход к стратегиям доступны с первого экрана. В компактном окне есть карточки стратегии, SecureLink, DPI-фильтра и оптимизации ПК.
-- **Первый запуск и вход.** После входа приложение предлагает настройки автозапуска, уведомлений, Game Filter и проверки DNS. Короткий код из кабинета дополняется четырьмя цифрами подтверждения из Desktop.
-- **Подключение и TurboDNS.** Дополнительные настройки собраны отдельно. В список DNS-провайдеров добавили Xbox DNS. SecureLink и оптимизация ПК доступны при подтверждённом Pro.
-- **Диагностика и восстановление.** Проверку можно запустить одной кнопкой, а готовый ZIP для поддержки сохраняется на рабочем столе. Перед очисткой кэша StabiLink закрывает Discord.
-- **Статистика, логи и профиль.** У проверок сервисов видны результат и время, журнал можно искать и фильтровать, а текущий компьютер выделен в списке устройств. Интерфейс выполняет меньше фоновых операций.
-
-[Полный ChangeLog и загрузка →](CHANGELOG.md#v440)
+[Полный ChangeLog и загрузка →](CHANGELOG.md#v450)
 
 ![Каталог игровых стратегий StabiLink Desktop: поиск, категории и выбор игры](assets/strategies.png)
 
@@ -57,7 +54,7 @@ Windows 10/11 x64 · Распакуйте весь ZIP · Запустите `St
 
 **Все игровые профили (31) доступны бесплатно.** Подписка PRO для выбора стратегии не нужна. Профиль предназначен для проверки сетевого пути, когда фильтрация трафика мешает входу или соединению. Симптом в таблице помогает выбрать сценарий проверки и сам по себе не устанавливает причину сбоя.
 
-| Игра | Когда попробовать | Профили в v4.4.0 |
+| Игра | Когда попробовать | Профили в v4.5.0 |
 |---|---|---|
 | [**Aion 2 (GLOBAL)**](#aion-2-global) | Не проходит авторизация, таймаут входа, лаунчер или игра не подключается к серверу | Phantom (Aion 2), Phoenix (Aion 2), Phantom (Aion 2 ALT) |
 | [**WARDOGS / Wardogs**](#wardogs) | Ошибка входа, не подключается к матчу, возврат в меню или потеря соединения | Phantom (WARDOGS), Phantom (WARDOGS ALT), Phoenix (WARDOGS), Phoenix (WARDOGS ALT) |
@@ -134,7 +131,7 @@ Windows 10/11 x64 · Распакуйте весь ZIP · Запустите `St
 <a id="game-steps"></a>
 ### Как проверить игровой профиль
 
-1. Обновитесь до **v4.4.0** и закройте игру.
+1. Обновитесь до **v4.5.0** и закройте игру.
 2. Откройте **«Стратегии → Для игр»**, выберите игру или найдите её по полному названию.
 3. Выберите профиль и нажмите **«Применить»**. Убедитесь, что Оптимизатор включён и выбранный вариант отображается как активный.
 4. Запустите игру; проверьте вход, лобби, матч и голосовой чат.
@@ -167,14 +164,15 @@ Windows 10/11 x64 · Распакуйте весь ZIP · Запустите `St
 | **Оптимизатор трафика** | Общие и игровые стратегии, автоподбор, резервные способы подключения | FREE / PRO |
 | **Game Filter** | Обработка игрового и голосового трафика внутри Оптимизатора | FREE / PRO |
 | **TurboDNS** | Защищённые DNS-запросы и кэш адресов; выбор DNS-сервиса | FREE / PRO |
+| **WARP от Cloudflare** | Системное подключение через Cloudflare | FREE / PRO |
 | **SecureLink VPN** | Туннельное подключение и маршруты выбранных игр и приложений | PRO |
 | **Performance Hub** | Подготовка Windows к игре и восстановление настроек | PRO |
 | **Sub URL** | Персональная подписка для клиентов на Android и iOS | PRO |
 | **Диагностика, статистика, журналы** | Проверки сервисов, состояние модулей, данные для поддержки | FREE / PRO |
 
-**SecureLink и TurboDNS включаются по отдельности**, поскольку оба управляют DNS. Оптимизатор может работать с подходящим режимом. В SecureLink можно выбрать установленную игру, её папку или `.exe`; изменения маршрутов применяются при следующем подключении VPN. Маршрутизация через VPN и игровой профиль Оптимизатора — разные настройки. [Матрица совместимости →](docs/MODES.md)
+**SecureLink, TurboDNS и WARP включаются по одному.** Оптимизатор трафика может работать отдельно или с любым из этих режимов. В SecureLink можно выбрать установленную игру, её папку или `.exe`; изменения маршрутов применяются при следующем подключении VPN. Маршрутизация через VPN и игровой профиль Оптимизатора — разные настройки. [Матрица совместимости →](docs/MODES.md)
 
-Другие игры также можно выбирать для маршрутизации SecureLink. Это не означает наличие отдельного профиля: встроенный каталог v4.4.0 содержит именно десять игр из [таблицы](#games).
+Другие игры также можно выбирать для маршрутизации SecureLink. Это не означает наличие отдельного профиля: встроенный каталог v4.5.0 содержит именно десять игр из [таблицы](#games).
 
 <a id="performance"></a>
 ## Performance Hub: подготовка Windows к игре
@@ -198,7 +196,7 @@ Windows 10/11 x64 · Распакуйте весь ZIP · Запустите `St
 
 <table>
 <tr><th>Компактное окно</th><th>Центр управления</th></tr>
-<tr><td width="30%"><img src="assets/compact-window.png" alt="Компактное окно StabiLink Desktop 4.4.0, демонстрационные данные" width="280"></td><td><img src="assets/control-center.png" alt="Обзор подключения StabiLink Desktop 4.4.0, демонстрационные данные" width="760"></td></tr>
+<tr><td width="30%"><img src="assets/compact-window.png" alt="Компактное окно StabiLink Desktop 4.5.0, демонстрационные данные" width="280"></td><td><img src="assets/control-center.png" alt="Обзор подключения StabiLink Desktop 4.5.0, демонстрационные данные" width="760"></td></tr>
 </table>
 
 [Диагностика](docs/CONTROL_CENTER.md#диагностика) показывает состояние подключения и собирает отчёт для поддержки. В [статистике](docs/CONTROL_CENTER.md#статистика) отдельно видны проверки сервисов, история Оптимизатора на этом ПК и трафик SecureLink по устройствам подписки. TCP-отклик в этой таблице измеряется до контрольных сервисов.
@@ -206,7 +204,7 @@ Windows 10/11 x64 · Распакуйте весь ZIP · Запустите `St
 <a id="plans"></a>
 ## FREE и PRO
 
-Все общие и игровые стратегии, Game Filter, TurboDNS, диагностика и обновления доступны FREE. SecureLink VPN, маршрутизация процессов, Performance Hub и Sub URL входят в PRO.
+Все общие и игровые стратегии, Game Filter, TurboDNS, WARP, диагностика и обновления доступны FREE. SecureLink VPN, маршрутизация процессов, Performance Hub и Sub URL входят в PRO.
 
 Актуальные цены, лимиты устройств и условия продления показаны в [личном кабинете](https://apps.stabilink.ru). Для каждого телефона создавайте отдельный слот Sub URL: он занимает место в лимите и позволяет независимо отключить устройство. [Подключить телефон →](docs/KARING.md)
 
@@ -215,7 +213,7 @@ Windows 10/11 x64 · Распакуйте весь ZIP · Запустите `St
 
 **Первый запуск FREE не требует покупки PRO или банковской карты.** Вход в бесплатный аккаунт нужен; его можно создать прямо в приложении по email.
 
-1. **[Скачайте ZIP v4.4.0 для Windows](https://github.com/sany86russ/StabiLink-Desktop/releases/download/v4.4.0/StabiLink-Desktop-v4.4.0-win-x64.zip)**. Это готовое приложение. Если открываете [страницу релиза](https://github.com/sany86russ/StabiLink-Desktop/releases/tag/v4.4.0), раскройте **Assets** и выберите `StabiLink-Desktop-v4.4.0-win-x64.zip`; архивы **Source code** для установки не подходят. До запуска сверьте [SHA-256](https://github.com/sany86russ/StabiLink-Desktop/releases/download/v4.4.0/StabiLink-Desktop-v4.4.0-win-x64.zip.sha256) по [инструкции проверки](docs/INSTALL.md#проверка-sha-256).
+1. **[Скачайте ZIP v4.5.0 для Windows](https://github.com/sany86russ/StabiLink-Desktop/releases/download/v4.5.0/StabiLink-Desktop-v4.5.0-win-x64.zip)**. Это готовое приложение. Если открываете [страницу релиза](https://github.com/sany86russ/StabiLink-Desktop/releases/tag/v4.5.0), раскройте **Assets** и выберите `StabiLink-Desktop-v4.5.0-win-x64.zip`; архивы **Source code** для установки не подходят. До запуска сверьте [SHA-256](https://github.com/sany86russ/StabiLink-Desktop/releases/download/v4.5.0/StabiLink-Desktop-v4.5.0-win-x64.zip.sha256) по [инструкции проверки](docs/INSTALL.md#проверка-sha-256).
 2. В Проводнике нажмите по ZIP правой кнопкой → **«Извлечь все…»**. Распакуйте всё в постоянную папку, например `C:\StabiLink`, затем откройте именно извлечённую папку.
 3. Запустите **`StabiLink.Desktop.exe`**. Если Windows скрывает расширения, файл называется **StabiLink.Desktop**, тип **«Приложение»**. Оставьте рядом папки `bin` и `lists`. Отдельного установщика нет; .NET включён в сборку.
 4. Подтвердите запрос прав администратора Windows. Прочитайте условия использования, отметьте согласие и нажмите **«Продолжить»**.
@@ -227,7 +225,7 @@ Windows 10/11 x64 · Распакуйте весь ZIP · Запустите `St
 Как проверить скачивание в PowerShell из папки загрузок:
 
 ```powershell
-Get-FileHash .\StabiLink-Desktop-v4.4.0-win-x64.zip -Algorithm SHA256
+Get-FileHash .\StabiLink-Desktop-v4.5.0-win-x64.zip -Algorithm SHA256
 ```
 
 Сравните результат с `.sha256` этого же релиза. [Подробная установка и помощь при запуске](docs/INSTALL.md).
@@ -253,7 +251,7 @@ Get-FileHash .\StabiLink-Desktop-v4.4.0-win-x64.zip -Algorithm SHA256
 
 ### Discord зависает на Checking for updates, Starting или RTC Connecting?
 
-В v4.4.0 сначала проверьте **Phantom** или уже выбранный игровой профиль Phantom. После применения стратегии перезапустите Discord. Если проблема осталась, сравните Phoenix, Phoenix ALT или Phantom Phoenix, затем используйте автоподбор и диагностику. Проверьте отдельно загрузку клиента, вход и голосовой канал. Работа сайта не доказывает исправность звонка. [FAQ →](docs/FAQ.md#discord-youtube)
+В v4.5.0 сначала проверьте **Phantom** или уже выбранный игровой профиль Phantom. После применения стратегии перезапустите Discord. Если проблема осталась, сравните Phoenix, Phoenix ALT или Phantom Phoenix, затем используйте автоподбор и диагностику. Проверьте отдельно загрузку клиента, вход и голосовой канал. Работа сайта не доказывает исправность звонка. [FAQ →](docs/FAQ.md#discord-youtube)
 
 ### YouTube буферизирует или пишет «Нет подключения к интернету»?
 
@@ -280,7 +278,7 @@ Get-FileHash .\StabiLink-Desktop-v4.4.0-win-x64.zip -Algorithm SHA256
 | [Sub URL](docs/SUB_URL.md) | Персональные слоты, импорт, смена и потеря телефона |
 | [Karing: Android и iPhone](docs/KARING.md) | Пошаговое подключение со скриншотами |
 | [Приватность и журналы](docs/PRIVACY_AND_LOGS.md) | Сбор отчёта и безопасная передача в поддержку |
-| [История версий](CHANGELOG.md) | v4.4.0 и предыдущие релизы |
+| [История версий](CHANGELOG.md) | v4.5.0 и предыдущие релизы |
 | [Публикация релизов](docs/RELEASE_PROCESS.md) | Процесс поставки и проверки готового пакета |
 
 [**Все Releases**](https://github.com/sany86russ/StabiLink-Desktop/releases) · [**Сообщить об ошибке**](https://github.com/sany86russ/StabiLink-Desktop/issues/new/choose) · [Обсуждения](https://github.com/sany86russ/StabiLink-Desktop/discussions) · [Помочь документации](CONTRIBUTING.md)
@@ -297,21 +295,18 @@ Get-FileHash .\StabiLink-Desktop-v4.4.0-win-x64.zip -Algorithm SHA256
 
 **Windows 10/11 x64 · 39 strategies · 10 games · Free Optimizer · Optional PRO VPN**
 
-[**Download Windows ZIP v4.4.0**](https://github.com/sany86russ/StabiLink-Desktop/releases/download/v4.4.0/StabiLink-Desktop-v4.4.0-win-x64.zip) · [Release history](CHANGELOG.md#v440) · [Website](https://stabilink.ru) · [Account](https://apps.stabilink.ru) · [Русский](#navigation)
+[**Download Windows ZIP v4.5.0**](https://github.com/sany86russ/StabiLink-Desktop/releases/download/v4.5.0/StabiLink-Desktop-v4.5.0-win-x64.zip) · [Release history](CHANGELOG.md#v450) · [Website](https://stabilink.ru) · [Account](https://apps.stabilink.ru) · [Русский](#navigation)
 
 StabiLink.Desktop brings connection profiles, secure DNS, selective VPN routing, diagnostics and PC preparation into one Windows app. Try a game profile when traffic filtering prevents sign-in, a lobby connection or joining a match. For everyday services, start with the general Phantom strategy or automatic selection.
 
 This is the official public distribution and documentation repository. **StabiLink application source code is private.** Download the ready-to-run ZIP from Releases. GitHub's automatic “Source code” archives contain this documentation and are not application installers.
 
-### What's new in 4.4.0
+### What's new in 4.5.0
 
-Changes since the previous public release, v4.3.5.
-
-- **Dashboard and compact window.** Connection status, switches and strategy navigation are available from Overview. Compact mode groups strategy, SecureLink, DPI filtering and PC optimization into separate cards.
-- **First launch and sign-in.** Quick setup follows sign-in. The device-code flow adds a four-digit confirmation shown by the desktop app.
-- **Connection tools.** Advanced settings are grouped separately. TurboDNS adds Xbox DNS. SecureLink and PC optimization require confirmed PRO access.
-- **Diagnostics and reporting.** Run a connection check from one button, save a support ZIP to your desktop, and let StabiLink close Discord before clearing its cache.
-- **Statistics, logs and profile.** Service results show when checks ran. Search and filter recent events, and find the current computer in the device list.
+- **Cloudflare WARP** is available to Free and Pro users from Connection, Overview, the compact window and the Windows tray. StabiLink registers the device after you accept Cloudflare's terms. Enable WARP autoconnect under Settings → Startup if you want it to connect when StabiLink starts.
+- **Connection and tray.** SecureLink, TurboDNS and WARP have separate cards. The tray shows live status indicators next to the mode names and Traffic Optimizer.
+- **WARP diagnostics.** Check connection stages and Cloudflare connectivity. Recovery tools can reset the WARP profile.
+- **Optimizer and updates.** This release includes the x17 engine and the changes from 4.4.1, including improvements to traffic processing, DNS checks and update rollback.
 
 ### Supported game profiles
 
@@ -345,14 +340,14 @@ Changes are based on reproducible symptoms, timestamps, diagnostics and privacy-
 
 | Feature | Plan |
 |---|---|
-| All general/game profiles, Game Filter, TurboDNS, diagnostics and updates | FREE / PRO |
+| All general/game profiles, Game Filter, TurboDNS, Cloudflare WARP, diagnostics and updates | FREE / PRO |
 | SecureLink VPN and selected application/site routing | PRO |
 | Performance Hub and game-session summaries | PRO |
 | Personal Sub URL for Android/iPhone clients | PRO |
 
 See the [account dashboard](https://apps.stabilink.ru) for current prices and device limits. Each phone should have its own Sub URL slot. Telegram is optional.
 
-**Optimizer**, **SecureLink VPN** and **Performance Hub** have different purposes. A game strategy adjusts Optimizer traffic rules. SecureLink chooses which traffic uses a VPN. Performance Hub manages supported Windows settings and monitors resource pressure. TurboDNS and SecureLink are used separately because both manage DNS.
+**Optimizer**, **SecureLink VPN** and **Performance Hub** have different purposes. A game strategy adjusts Optimizer traffic rules. SecureLink chooses which traffic uses a VPN. Performance Hub manages supported Windows settings and monitors resource pressure. SecureLink, TurboDNS and WARP run one at a time. Traffic Optimizer can run on its own or alongside any one of them.
 
 SecureLink application rules route IPv4. IPv6 is supported for selected domains and explicit IPv6 subnets when the server supports it; an application rule alone is not a system-wide IPv6 capture or kill switch. Local/corporate names and explicit direct exceptions keep their intended route.
 
@@ -360,7 +355,7 @@ SecureLink application rules route IPv4. IPv6 is supported for selected domains 
 
 FREE needs an account but does not require PRO or a payment card. You can create a free account inside the app using your email. The instructions below include the actual Russian button labels shown by the app.
 
-1. **[Download the ready-to-run Windows ZIP](https://github.com/sany86russ/StabiLink-Desktop/releases/download/v4.4.0/StabiLink-Desktop-v4.4.0-win-x64.zip)** and its [SHA-256 file](https://github.com/sany86russ/StabiLink-Desktop/releases/download/v4.4.0/StabiLink-Desktop-v4.4.0-win-x64.zip.sha256); compare the checksum before running the app. On the [release page](https://github.com/sany86russ/StabiLink-Desktop/releases/tag/v4.4.0), expand **Assets** and choose **StabiLink-Desktop-v4.4.0-win-x64.zip**. GitHub's **Source code** archives are not installers.
+1. **[Download the ready-to-run Windows ZIP](https://github.com/sany86russ/StabiLink-Desktop/releases/download/v4.5.0/StabiLink-Desktop-v4.5.0-win-x64.zip)** and its [SHA-256 file](https://github.com/sany86russ/StabiLink-Desktop/releases/download/v4.5.0/StabiLink-Desktop-v4.5.0-win-x64.zip.sha256); compare the checksum before running the app. On the [release page](https://github.com/sany86russ/StabiLink-Desktop/releases/tag/v4.5.0), expand **Assets** and choose **StabiLink-Desktop-v4.5.0-win-x64.zip**. GitHub's **Source code** archives are not installers.
 2. In File Explorer, right-click the ZIP and choose **Extract All…**. Extract every file to a permanent writable folder, then open that extracted folder.
 3. Run **`StabiLink.Desktop.exe`**. When Windows hides extensions, it appears as **StabiLink.Desktop**, type **Application**. Keep the `bin` and `lists` folders beside it. There is no separate setup program; the .NET runtime is included.
 4. Approve the Windows administrator prompt. Read the terms, select the consent checkbox if you agree and click **«Продолжить» (Continue)**.
@@ -370,7 +365,7 @@ FREE needs an account but does not require PRO or a payment card. You can create
 8. For Discord/YouTube start with the general **Phantom** strategy or **«Автоподбор» (Auto-select)**. Automatic selection tests general strategies; compare game profiles manually. Check the real video, voice call or game after the connection test.
 
 ```powershell
-Get-FileHash .\StabiLink-Desktop-v4.4.0-win-x64.zip -Algorithm SHA256
+Get-FileHash .\StabiLink-Desktop-v4.5.0-win-x64.zip -Algorithm SHA256
 ```
 
 Compare the result with the release's `.sha256` file. If Windows blocks launch, keep the exact message and contact [support](SUPPORT.md); do not disable antivirus or replace individual runtime files.

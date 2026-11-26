@@ -2,6 +2,37 @@
 
 [Руководства](README.md#docs) · [Игры](README.md#games) · [Все релизы](https://github.com/sany86russ/StabiLink-Desktop/releases) · [Поддержка](SUPPORT.md)
 
+<a id="v450"></a>
+## [4.5.0](https://github.com/sany86russ/StabiLink-Desktop/releases/tag/v4.5.0) — 26 ноября 2026
+
+В StabiLink появился WARP от Cloudflare для пользователей Free и Pro. Мы обновили меню в трее и навигацию по приложению, доработали диагностику и включили улучшения Оптимизатора трафика и обновлений из 4.4.1.
+
+### WARP от Cloudflare
+
+- Новый режим подключения для Windows доступен в разделе «Подключение», компактном окне и трее. При первом запуске StabiLink покажет условия Cloudflare, а после согласия автоматически зарегистрирует устройство.
+- Автоподключение WARP можно включить по желанию в разделе «Настройки → Автозапуск». При сбое StabiLink повторяет подключение и при необходимости проверяет запасные адреса и порты Cloudflare.
+- SecureLink, TurboDNS и WARP включаются по одному. Оптимизатор трафика может работать вместе с любым из этих режимов.
+- В «Диагностике» появились этапы подключения, результат проверки связи с Cloudflare и отдельный журнал WARP. В «Инструментах восстановления» можно сбросить профиль и очистить временные файлы. Для профилей с данными регистрации StabiLink также запрашивает отзыв устройства в Cloudflare.
+
+### Интерфейс и навигация
+
+- В разделе «Подключение» появились отдельные карточки SecureLink, TurboDNS и WARP с одинаковыми переключателями. Настройки DNS и игр SecureLink находятся в его карточке, выбор DNS-провайдера — в карточке TurboDNS.
+- В компактном окне и на «Обзоре» видны состояния сетевых режимов. В трее SecureLink, TurboDNS, WARP и Оптимизатор трафика получили постоянные названия и индикаторы справа. Команды сгруппированы по назначению, а при обычном переключении результат виден в открытом меню.
+- Подтверждения и сообщения оформлены в стиле StabiLink. После отмены смены режима переключатели показывают текущее состояние сервисов.
+
+### Оптимизатор трафика, DNS и обновления
+
+- Движок Оптимизатора обновлён до x17. Улучшили обработку трафика для Phantom, Phoenix и их игровых вариантов, быструю остановку и повторный запуск. Если новый комплект стратегий или списков повреждён, продолжает работать текущий.
+- Дополнительные настройки Оптимизатора сохраняются по отдельности. При ошибке в параметрах Game Filter приложение пропускает дополнительные игровые порты и сообщает об этом.
+- StabiLink сохраняет изменения DNS после повторной проверки. Если улучшение не подтвердилось, приложение возвращает прежние параметры. Диагностика показывает результат очистки кэша DNS Windows и причину возможного сбоя.
+- Окна обновления показывают текущий этап и причину возможной отсрочки. При откате обновления установщик сохраняет настройки, данные лицензии и журналы.
+
+### English summary
+
+StabiLink Desktop 4.5.0 adds Cloudflare WARP for Free and Pro users, with optional autoconnect, connection diagnostics, and profile recovery. The redesigned Windows tray shows live mode indicators. The Connection page groups SecureLink, TurboDNS, and WARP into separate cards. This release also includes Optimizer x17 improvements, clearer DNS diagnostics, and safer update rollback.
+
+[Скачать ZIP для Windows x64](https://github.com/sany86russ/StabiLink-Desktop/releases/download/v4.5.0/StabiLink-Desktop-v4.5.0-win-x64.zip) · [SHA-256](https://github.com/sany86russ/StabiLink-Desktop/releases/download/v4.5.0/StabiLink-Desktop-v4.5.0-win-x64.zip.sha256) · [Установка](docs/INSTALL.md)
+
 <a id="v440"></a>
 ## [4.4.0](https://github.com/sany86russ/StabiLink-Desktop/releases/tag/v4.4.0) — 24 ноября 2026
 
